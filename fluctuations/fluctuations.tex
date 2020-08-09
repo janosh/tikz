@@ -1,0 +1,42 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots,mathtools}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+\begin{tikzpicture}
+  \begin{axis}[
+      xlabel = $T$,
+      ylabel = $\Delta n_k^+$,
+      smooth,thick,
+      axis lines = center,
+      every tick/.style = thick]
+
+    \def\beta{1/x}
+    \def\ek{1}
+    \def\mu{0}
+    \def\bosefluc{1/(2*sinh(\beta/2 * (\ek - \mu)))^2}
+    \addplot[color=blue,domain = 0:4.2]{\bosefluc};
+
+  \end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \begin{axis}[
+      xlabel = $T$,
+      ylabel = $\Delta n_k^-$,
+      smooth,thick,
+      ymax = 0.28,
+      axis lines = center,
+      every tick/.style = thick,
+      yticklabel style = /pgf/number format/fixed]
+
+    \def\beta{1/x}
+    \def\ek{1}
+    \def\mu{0}
+    \def\fermfluc{1/(2 + 2*cosh(\beta * (\ek - \mu)))}
+    \addplot[color=blue,domain = 0:4.2]{\fermfluc};
+
+  \end{axis}
+\end{tikzpicture}
+\end{document}

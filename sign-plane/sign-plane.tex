@@ -1,0 +1,22 @@
+\documentclass[svgnames,tikz]{standalone}
+
+\begin{document}
+\begin{tikzpicture}[thick]
+
+  \def\xr{4} \def\yr{4}
+
+  % Axes:
+  \draw [->] (-\xr,0) -- (\xr,0) node [right]  {$\Re(p_0)$};
+  \draw [->] (0,-\yr) -- (0,\yr) coordinate (y-axis);
+  \node[above] (y-label) at (y-axis) {$\Im(p_0)$};
+
+  \begin{scope}[on background layer]
+    \draw[xshift=4,yshift=4,scale=0.95,DarkRed,fill=DarkRed!10] (0,0) rectangle (\xr,\yr) node[black,midway] {$s(p_0) = 1$};
+    \draw[xshift=-4,yshift=4,scale=0.95,DarkBlue,fill=DarkBlue!10] (0,0) rectangle (-\xr,\yr) node[black,midway] {$s(p_0) = -1$};
+    \draw[xshift=-4,yshift=-4,scale=0.95,DarkRed,fill=DarkRed!10] (0,0) rectangle (-\xr,-\yr) node[black,midway] {$s(p_0) = 1$};
+    \draw[xshift=4,yshift=-4,scale=0.95,DarkBlue,fill=DarkBlue!10] (0,0) rectangle (\xr,-\yr) node[black,midway] {$s(p_0) = -1$};
+  \end{scope}
+
+
+\end{tikzpicture}
+\end{document}

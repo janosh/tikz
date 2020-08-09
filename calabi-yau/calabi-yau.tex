@@ -1,0 +1,43 @@
+\documentclass{standalone}
+\PassOptionsToPackage{noplaybutton}{media9}
+\usepackage{asymptote}
+
+\begin{document}
+
+\begin{asy}[width=10cm,height=10cm]
+  import graph3;
+
+  size3(200);
+  currentprojection=orthographic(3,3,2);
+  currentlight=light(8,10,2);
+
+  int k1, k2, n = 5;
+  real alpha = 0.3*pi;
+
+  // cross section of the quintic 6D Calabi-Yau manifold
+  triple cy(pair z) {
+
+      pair z1, z2;
+
+      if(z==(0,0)) {
+          z1 = exp(2*pi*I*k1/n);
+          z2 = 0;
+        } else {
+          z1 = exp(2*pi*I*k1/n)*exp(log(cos(I*z))*2/n);
+          z2 = exp(2*pi*I*k2/n)*exp(log(-I*sin(I*z))*2/n);
+        }
+
+      return (z2.x, cos(alpha)*z1.y + sin(alpha)*z2.y, z1.x);
+
+    }
+
+  for(k1=0; k1<n; ++k1) {
+      for(k2=0; k2<n; ++k2) {
+          surface s = surface(cy,(-1,0),(1,0.5*pi),20,20);
+          draw(s,yellow+orange);
+        }
+    }
+
+\end{asy}
+
+\end{document}

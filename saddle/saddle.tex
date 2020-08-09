@@ -1,0 +1,15 @@
+\documentclass[svgnames]{standalone}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{axis}[samples=30,ticks=none,xlabel={$V$},ylabel={$T$},zlabel={$F(T,V)$}]
+
+    \addplot3[surf,color=DarkBlue,opacity=0.5,domain=-2:2,faceted color=black] {x^2-y^2};
+  \end{axis}
+\end{tikzpicture}
+
+\end{document}

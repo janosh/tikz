@@ -1,0 +1,52 @@
+\documentclass{standalone}
+
+\usepackage{pgfgantt,microtype,siunitx}
+\ganttset{
+    group/.append style={orange!75},
+    bar/.style={fill=blue!60!black},
+    title label font=\bfseries,
+}
+
+\begin{document}
+\sffamily
+\begin{ganttchart}[
+    y unit title=0.55cm,
+    y unit chart=0.5cm,
+    x unit=1cm,
+    vgrid,hgrid,
+    title height=1,
+    bar height=0.7,
+    bar top shift=0.15,
+    bar label text={\textls[-20]{#1}},
+    group top shift=0.1,
+    group height=0.8,
+    group inline label node/.style={above=-0.375,font=\bfseries\color{white}},
+    inline,
+    bar inline label anchor=center,
+    bar inline label node/.append style={font=\small\color{white}},
+  ]{1}{12}
+  % title
+  \gantttitle{2018}{3}
+  \gantttitle{2019}{9}\\
+  \gantttitlelist{"Oct","Nov","Dec","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep"}{1}\\
+  % groups
+  \ganttgroup{Thermoelectrics}{1}{12}\\
+  \ganttbar{data acquisition}{1}{4}\\
+  \ganttbar{Dropout NN}{1}{2}\\
+  \ganttbar{Hyper Optimization}{3}{7}\\
+  \ganttbar{GPR}{3}{4}\\
+  \ganttbar{HMC}{4}{6}\\
+  \ganttbar{SVGD}{6}{7}\\
+  \ganttbar{Leaderboarding}{7}{8}\\
+  \ganttbar{DFT}{9}{11}\\
+  \ganttbar{active ML}{10}{12}\\
+
+  legend
+  \node[fill=black!60,anchor=south west,align=left,font=\footnotesize\color{white}] at ([xshift=5,yshift=-10]current bounding box.south west){
+    GPR: Gaussian process regression\\
+    HMC: Hamiltonian Monte Carlo\\
+    SVGD: Stein variational gradient descent
+  };
+
+\end{ganttchart}
+\end{document}
