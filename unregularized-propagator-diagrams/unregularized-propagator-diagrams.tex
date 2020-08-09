@@ -1,12 +1,11 @@
-\documentclass{standalone}
+\documentclass[tikz]{standalone}
 
-\usepackage{tikz}
 \usetikzlibrary{patterns}
+
+\def\radius{1}
 
 \begin{document}
 \begin{tikzpicture}
-
-  \def\radius{1}
 
   % Left diagram
   \draw[thick] (0,0) circle (\radius);
@@ -23,5 +22,6 @@
 
     \draw[fill=white,postaction={pattern=north east lines}] (0,-\radius) circle (0.25*\radius) node[above=5pt] {$\Gamma_k^{(4)}$};
   \end{scope}
+
 \end{tikzpicture}
 \end{document}
