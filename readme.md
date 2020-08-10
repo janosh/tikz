@@ -4,9 +4,9 @@ Random collection of [`standalone`](https://ctan.org/pkg/standalone) [TikZ](http
 
 ## Previews
 
-| [`balance.tex`](assets/balance)                                                                                | [`bloch.tex`](assets/bloch)                                                                                                         |
+| [`detailed-balance.tex`](assets/detailed-balance)                                                              | [`bloch.tex`](assets/bloch)                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="assets/balance/balance.png" alt="balance" width=300>                                                 | <img src="assets/bloch/bloch.png" alt="bloch" width=300>                                                                            |
+| <img src="assets/detailed-balance/detailed-balance.png" alt="detailed-balance" width=300>                      | <img src="assets/bloch/bloch.png" alt="bloch" width=300>                                                                            |
 | [`boltzmann.tex`](assets/boltzmann)                                                                            | [`bose-distribution-3d.tex`](assets/bose-distribution-3d)                                                                           |
 | <img src="assets/boltzmann/boltzmann.png" alt="boltzmann" width=300>                                           | <img src="assets/bose-distribution-3d/bose-distribution-3d.png" alt="bose-distribution-3d" width=300>                               |
 | [`bose-distribution.tex`](assets/bose-distribution)                                                            | [`branch-and-bound.tex`](assets/branch-and-bound)                                                                                   |
