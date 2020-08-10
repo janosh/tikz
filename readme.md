@@ -72,13 +72,13 @@ Auto-assembled collection of `standalone` TikZ images accumulated over the years
 
 <img src="cuts/cuts.png" alt="cuts" height=100>
 
-### [`otto cycle.tex`](otto cycle/otto cycle.tex)
+### [`otto-cycle.tex`](otto-cycle/otto-cycle.tex)
 
-<img src="cycle/otto cycle.png" alt="otto cycle" height=100>
+<img src="cycle/otto-cycle.png" alt="otto-cycle" height=100>
 
-### [`contour deformation.tex`](contour deformation/contour deformation.tex)
+### [`contour-deformation.tex`](contour-deformation/contour-deformation.tex)
 
-<img src="deformation/contour deformation.png" alt="contour deformation" height=100>
+<img src="deformation/contour-deformation.png" alt="contour-deformation" height=100>
 
 ### [`dft-choices.tex`](dft-choices/dft-choices.tex)
 
@@ -188,9 +188,9 @@ Auto-assembled collection of `standalone` TikZ images accumulated over the years
 
 <img src="one-point/one-point.png" alt="one-point" height=100>
 
-### [`operator orderings.tex`](operator orderings/operator orderings.tex)
+### [`operator-orderings.tex`](operator-orderings/operator-orderings.tex)
 
-<img src="orderings/operator orderings.png" alt="operator orderings" height=100>
+<img src="orderings/operator-orderings.png" alt="operator-orderings" height=100>
 
 ### [`phd.tex`](phd/phd.tex)
 
@@ -200,9 +200,9 @@ Auto-assembled collection of `standalone` TikZ images accumulated over the years
 
 <img src="poles/poles.png" alt="poles" height=100>
 
-### [`higgs potential.tex`](higgs potential/higgs potential.tex)
+### [`higgs-potential.tex`](higgs-potential/higgs-potential.tex)
 
-<img src="potential/higgs potential.png" alt="higgs potential" height=100>
+<img src="potential/higgs-potential.png" alt="higgs-potential" height=100>
 
 ### [`propagator-fluctuations.tex`](propagator-fluctuations/propagator-fluctuations.tex)
 
@@ -252,9 +252,9 @@ Auto-assembled collection of `standalone` TikZ images accumulated over the years
 
 <img src="sign/sign.png" alt="sign" height=100>
 
-### [`relation space.tex`](relation space/relation space.tex)
+### [`relation-space.tex`](relation-space/relation-space.tex)
 
-<img src="space/relation space.png" alt="relation space" height=100>
+<img src="space/relation-space.png" alt="relation-space" height=100>
 
 ### [`spontaneous.tex`](spontaneous/spontaneous.tex)
 
@@ -268,13 +268,13 @@ Auto-assembled collection of `standalone` TikZ images accumulated over the years
 
 <img src="theory-space/theory-space.png" alt="theory-space" height=100>
 
-### [`closed string topologies.tex`](closed string topologies/closed string topologies.tex)
+### [`closed-string-topologies.tex`](closed-string-topologies/closed-string-topologies.tex)
 
-<img src="topologies/closed string topologies.png" alt="closed string topologies" height=100>
+<img src="topologies/closed-string-topologies.png" alt="closed-string-topologies" height=100>
 
-### [`open string topologies.tex`](open string topologies/open string topologies.tex)
+### [`open-string-topologies.tex`](open-string-topologies/open-string-topologies.tex)
 
-<img src="topologies/open string topologies.png" alt="open string topologies" height=100>
+<img src="topologies/open-string-topologies.png" alt="open-string-topologies" height=100>
 
 ### [`tori.tex`](tori/tori.tex)
 
@@ -282,19 +282,15 @@ Auto-assembled collection of `standalone` TikZ images accumulated over the years
 
 ### [`cylinder-to-plane.tex`](cylinder-to-plane/cylinder-to-plane.tex)
 
-<img src="torus-fundamental-domain/cylinder-to-plane.png" alt="cylinder-to-plane" height=100>
+<img src="cylinder-to-plane/cylinder-to-plane.png" alt="cylinder-to-plane" height=100>
 
 ### [`disk-to-plane.tex`](disk-to-plane/disk-to-plane.tex)
 
-<img src="torus-fundamental-domain/disk-to-plane.png" alt="disk-to-plane" height=100>
+<img src="disk-to-plane/disk-to-plane.png" alt="disk-to-plane" height=100>
 
 ### [`plane-to-torus.tex`](plane-to-torus/plane-to-torus.tex)
 
-<img src="torus-fundamental-domain/plane-to-torus.png" alt="plane-to-torus" height=100>
-
-### [`torus fundamental domain.tex`](torus fundamental domain/torus fundamental domain.tex)
-
-<img src="torus-fundamental-domain/torus fundamental domain.png" alt="torus fundamental domain" height=100>
+<img src="plane-to-torus/plane-to-torus.png" alt="plane-to-torus" height=100>
 
 ### [`torus-fundamental-domain.tex`](torus-fundamental-domain/torus-fundamental-domain.tex)
 
@@ -312,9 +308,9 @@ Auto-assembled collection of `standalone` TikZ images accumulated over the years
 
 <img src="two-point/two-point.png" alt="two-point" height=100>
 
-### [`">unregularized-propagator.tex`](">unregularized-propagator/">unregularized-propagator.tex)
+### [`unregularized-propagator.tex`](unregularized-propagator/unregularized-propagator.tex)
 
-<img src="unregularized-propagator-diagrams/">unregularized-propagator-diagrams.pn alt="">unregularized-propagator" height=100g
+<img src="unregularized-propagator-diagrams/unregularized-propagator-diagrams.png" alt="unregularized-propagator" height=100>
 
 ### [`wall.tex`](wall/wall.tex)
 
