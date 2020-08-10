@@ -8,9 +8,6 @@
 # immediately compressing files in place.
 
 find "$1" -name "*.pdf" | while read file; do
-  path=${file%/*}
-  basename=${file##*/}
-  ext=${basename##*.}
-  filename=${basename%.*}
-  gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dBATCH -dQUIET -sOutputFile="$path/$filename.pdf" "$file"
+  gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
+    -dNOPAUSE -dBATCH -dQUIET -sOutputFile="$file" "$file"
 done
