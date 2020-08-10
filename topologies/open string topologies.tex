@@ -1,12 +1,16 @@
-\documentclass{standalone}
+\documentclass[tikz]{standalone}
 \usepackage{amsmath}
-\usepackage{tikz}
-\usetikzlibrary{tqft}
-\usetikzlibrary{calc}
+
+\usetikzlibrary{tqft,calc}
 
 \begin{document}
-{\scriptsize
-\begin{tikzpicture}[every tqft/.append style={transform shape, rotate=90, tqft/circle x radius=7pt, tqft/circle y radius=0pt, tqft/boundary separation=1cm}]
+
+\begin{tikzpicture}[
+    every tqft/.append style={
+        transform shape, rotate=90, tqft/circle x radius=7pt,
+        tqft/circle y radius=0pt, tqft/boundary separation=1cm
+      }
+  ]
   % cobordism at upper left
   \pic[
     tqft/cylinder to prior,
@@ -83,5 +87,5 @@
   \draw[<->] (circ.south west) +(-0.1,0) to[bend left=45] ($(circ.north west)+(-0.1,0)$);
   \node[left] at(circ.west) {$\tau$};
 \end{tikzpicture}
-}
+
 \end{document}

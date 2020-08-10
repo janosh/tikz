@@ -1,14 +1,14 @@
-\documentclass[svgnames]{standalone}
+\documentclass[tikz,svgnames]{standalone}
 
-\usepackage[utf8]{inputenc}
-\usepackage{tikz}
 \usetikzlibrary{mindmap}
 
 \begin{document}
 
-\begin{tikzpicture}[mindmap, grow cyclic, every node/.style=concept, concept color=orange,
+\begin{tikzpicture}[
+    mindmap, grow cyclic, every node/.style=concept, concept color=orange,
     level 1/.append style={level distance=5cm,sibling angle=90,font=\large},
-    level 2/.append style={level distance=3cm,sibling angle=45}]
+    level 2/.append style={level distance=3cm,sibling angle=45}
+  ]
 
   \node{\textbf{\LARGE{Komfort}}} [clockwise from=0]
   child [concept color=Gold] { node {selbst\-lernende Systeme} [counterclockwise from=270]

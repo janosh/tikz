@@ -1,5 +1,5 @@
-\documentclass{standalone}
-\usepackage{tikz}
+\documentclass[tikz]{standalone}
+
 \usetikzlibrary{intersections,decorations.markings}
 
 \begin{document}
@@ -54,7 +54,7 @@
   \coordinate (GH1)  at (intersection-1);
   \coordinate (GH2)  at (intersection-2);
 
-  % draw outline 
+  % draw outline
   \draw[thick,decoration={markings, mark=at position 0.075 with {\arrow[ultra thick]{>}}},postaction={decorate}]
   (GH2) arc[start angle=\FEFtwo-360, end angle=\FEFone-360,radius=0.6cm] --
   (GH1) arc[start angle=\EEFone-360, end angle=\EEFtwo,radius=2cm];
