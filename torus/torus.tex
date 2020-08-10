@@ -5,13 +5,14 @@
 
 \begin{document}
 \begin{tikzpicture}
-  \tikzstyle{every node}=[font=\tiny]
-  \begin{axis}[axis equal image,
+  \begin{axis}[
+      axis equal image,
       axis lines=middle,
       xmax=18,zmax=5,
       ticks=none,
       clip bounding box=upper bound,
-      colormap/blackwhite]
+      colormap/blackwhite
+    ]
 
     \addplot3[domain=0:360,y domain=0:320, samples=50,surf,z buffer=sort]
     ({(12 + 3 * cos(x)) * cos(y)} ,

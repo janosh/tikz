@@ -74,7 +74,7 @@ Random collection of [`standalone`](https://ctan.org/pkg/standalone) [TikZ](http
 
 ### [`otto-cycle.tex`](otto-cycle/otto-cycle.tex)
 
-<img src="cycle/otto-cycle.png" alt="otto-cycle" width=300>
+<img src="otto-cycle/otto-cycle.png" alt="otto-cycle" width=300>
 
 ### [`contour-deformation.tex`](contour-deformation/contour-deformation.tex)
 
@@ -190,11 +190,11 @@ Random collection of [`standalone`](https://ctan.org/pkg/standalone) [TikZ](http
 
 ### [`operator-orderings.tex`](operator-orderings/operator-orderings.tex)
 
-<img src="orderings/operator-orderings.png" alt="operator-orderings" width=300>
+<img src="operator-orderings/operator-orderings.png" alt="operator-orderings" width=300>
 
-### [`phd.tex`](phd/phd.tex)
+### [`phd-gantt.tex`](phd-gantt/phd-gantt.tex)
 
-<img src="phd/phd.png" alt="phd" width=300>
+<img src="phd-gantt/phd-gantt.png" alt="phd-gantt" width=300>
 
 ### [`poles.tex`](poles/poles.tex)
 
@@ -202,7 +202,7 @@ Random collection of [`standalone`](https://ctan.org/pkg/standalone) [TikZ](http
 
 ### [`higgs-potential.tex`](higgs-potential/higgs-potential.tex)
 
-<img src="potential/higgs-potential.png" alt="higgs-potential" width=300>
+<img src="higgs-potential/higgs-potential.png" alt="higgs-potential" width=300>
 
 ### [`propagator-fluctuations.tex`](propagator-fluctuations/propagator-fluctuations.tex)
 
@@ -219,10 +219,6 @@ Random collection of [`standalone`](https://ctan.org/pkg/standalone) [TikZ](http
 ### [`regular-vs-bayes-nn.tex`](regular-vs-bayes-nn/regular-vs-bayes-nn.tex)
 
 <img src="regular-vs-bayes-nn/regular-vs-bayes-nn.png" alt="regular-vs-bayes-nn" width=300>
-
-### [`results.tex`](results/results.tex)
-
-<img src="results/results.png" alt="results" width=300>
 
 ### [`saddle.tex`](saddle/saddle.tex)
 
@@ -254,7 +250,7 @@ Random collection of [`standalone`](https://ctan.org/pkg/standalone) [TikZ](http
 
 ### [`relation-space.tex`](relation-space/relation-space.tex)
 
-<img src="space/relation-space.png" alt="relation-space" width=300>
+<img src="relation-space/relation-space.png" alt="relation-space" width=300>
 
 ### [`spontaneous.tex`](spontaneous/spontaneous.tex)
 
@@ -270,11 +266,11 @@ Random collection of [`standalone`](https://ctan.org/pkg/standalone) [TikZ](http
 
 ### [`closed-string-topologies.tex`](closed-string-topologies/closed-string-topologies.tex)
 
-<img src="topologies/closed-string-topologies.png" alt="closed-string-topologies" width=300>
+<img src="closed-string-topologies/closed-string-topologies.png" alt="closed-string-topologies" width=300>
 
 ### [`open-string-topologies.tex`](open-string-topologies/open-string-topologies.tex)
 
-<img src="topologies/open-string-topologies.png" alt="open-string-topologies" width=300>
+<img src="open-string-topologies/open-string-topologies.png" alt="open-string-topologies" width=300>
 
 ### [`tori.tex`](tori/tori.tex)
 
