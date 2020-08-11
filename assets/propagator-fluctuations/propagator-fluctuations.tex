@@ -2,7 +2,13 @@
 
 \usetikzlibrary{patterns}
 
-\tikzset{cross/.style={path picture={\draw[black] (path picture bounding box.south east) -- (path picture bounding box.north west) (path picture bounding box.south west) -- (path picture bounding box.north east);}}}
+\tikzset{
+  cross/.style={
+    path picture={
+      \draw[black] (path picture bounding box.south east) -- (path picture bounding box.north west) (path picture bounding box.south west) -- (path picture bounding box.north east);
+    }
+  }
+}
 
 \def\unit{0.7}
 

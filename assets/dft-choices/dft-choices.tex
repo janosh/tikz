@@ -6,14 +6,13 @@
 
 
 \begin{document}
-\begin{tikzpicture}[auto]
-
-  \tikzset{
+\begin{tikzpicture}[
     g/.style={rectangle,draw,rounded corners,minimum height=6em,inner sep=1em,font=\Huge},
     w/.style={font=\Huge},
     c/.style={node distance=15ex,align=left,font=\huge},
     a/.style={draw,-latex',ultra thick}
-  }
+  ]
+
   \node [w,scale=3] (bra) {(};
   \node [node distance=0ex,fill=orange!30,g,right=of bra] (kinetic) {$-\frac{\hbar^2}{2m}\,\vec{\nabla}_{\vec{r}}^2$};
   \node [node distance=2ex,w,right=of kinetic] (plus1) {$+$};

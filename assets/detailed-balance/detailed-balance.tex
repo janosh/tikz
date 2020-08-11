@@ -1,12 +1,12 @@
 \documentclass[tikz]{standalone}
 
-\tikzset{
+\begin{document}
+\begin{tikzpicture}[
+    very thick,font=\huge,
     col/.style={circle,draw=gray!90,fill=gray!30,minimum size=15},
     incom/.style={<-,shorten <=2},
-    outgo/.style={->,shorten <=2}}
-
-\begin{document}
-\begin{tikzpicture}[very thick,font=\huge]
+    outgo/.style={->,shorten <=2}
+  ]
 
   \node[scale=2] (eq) at (0,0) {=};
   \coordinate[col] (col1) at eq++(-4,0);

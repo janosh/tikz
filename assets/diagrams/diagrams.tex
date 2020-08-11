@@ -2,14 +2,18 @@
 
 \usetikzlibrary{patterns}
 
-\tikzset{
-    cross/.style={path picture={\draw[black,thick]
-        (path picture bounding box.south east) -- (path picture bounding box.north west)
-        (path picture bounding box.south west) -- (path picture bounding box.north east);}}
-}
-
 \begin{document}
-\begin{tikzpicture}[very thick,q0/.style={->,DarkBlue,semithick,yshift=5pt,shorten >=5pt,shorten <=5pt}]
+\begin{tikzpicture}[
+    very thick,
+    q0/.style={->,DarkBlue,semithick,yshift=5pt,shorten >=5pt,shorten <=5pt},
+    cross/.style={
+        path picture={
+            \draw[black,thick]
+            (path picture bounding box.south east) -- (path picture bounding box.north west)
+            (path picture bounding box.south west) -- (path picture bounding box.north east);
+          }
+      }
+  ]
 
   % Loop
   \def\radius{1.5}
@@ -44,7 +48,6 @@
     \draw[q0] (-2*\radius,0) -- (-\radius,0) node[midway,above] {$q_0$};
     \draw[q0] (\radius,0) -- (2*\radius,0) node[midway,above] {$q_0$};
   \end{scope}
-
 
 \end{tikzpicture}
 \end{document}
