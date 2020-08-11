@@ -1,3 +1,6 @@
+% A chain of bijections $f = f_1 \circ \dots \circ f_k$ constituting a normalizing flow which step by step transforms a simple distribution $p_0(\vec z_0)$ into a complex one $p_k(\vec z_k)$. The bijections are trained to fit $p_k(\vec z_k)$ to some target distribution $p_x(\vec x)$.
+% Inspired by Lilian Weng: https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models
+
 \documentclass[tikz]{standalone}
 
 \usetikzlibrary{positioning}
@@ -13,7 +16,7 @@
 
 \begin{document}
 \begin{tikzpicture}[
-    node distance=2, very thick, font=\large,
+    node distance=2, very thick,
     flow/.style={shorten >=3, shorten <=3, ->},
     znode/.style={circle, fill=black!10, minimum size=22, inner sep=0},
   ]
@@ -22,13 +25,13 @@
   \node[znode, right=of z0] (z1) {$z_1$};
   \draw[flow] (z0) -- node[above, midway] {$f_1(z_0)$} (z1);
 
-  \node[znode, right=of z1] (zi) {$z_i$};
+  \node[znode, right=2.5 of z1] (zi) {$z_i$};
   \node[znode, right=of zi] (zip1) {$z_{i+1}$};
   \draw[flow] (zi) -- node[above, midway] {$f_{i+1}(z_i)$} (zip1);
-  \draw[flow] (z1) --node[rectangle, fill=white, anchor=center, midway] {$\dots$} (zi);
+  \draw[flow] (z1) -- node[fill=white, pos=0.15, inner sep=1] {\textbf\dots} node[above, midway] {$f_i(z_{i-1})$} (zi);
 
-  \node[znode, draw=green!70!black, right=of zip1] (zk) {$z_k$};
-  \draw[flow] (zip1) -- node[rectangle, fill=white, anchor=center, midway] {$\dots$} (zk);
+  \node[znode, draw=green!70!black, right=2.5 of zip1] (zk) {$z_k$};
+  \draw[flow] (zip1) -- node[fill=white, pos=0.15, inner sep=1] {\textbf\dots} node[above, midway] {$f_k(z_{k-1})$} (zk);
   \node[right=0 of zk, scale=1.2] {$= x$};
   \node[outer sep=0, inner sep=0, below=0.2 of z0, label={below:$z_0 \sim p_0(z_0)$}] (f0) {\distro{1}{0}{0}};
   \node[outer sep=0, inner sep=0, below=0.2 of zi, label={below:$z_i \sim p_i(z_i)$}] (fi) {\distro[70]{1}{1}{0}};
