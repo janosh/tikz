@@ -8,6 +8,15 @@
 # immediately compressing files in place.
 
 find "$1" -name "*.pdf" | while read file; do
+  basename=${file%.pdf}
+
   gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
-    -dNOPAUSE -dBATCH -dQUIET -sOutputFile="$file" "$file"
+    -dNOPAUSE -dBATCH -dQUIET -sOutputFile="$basename-min.pdf" "$file"
+
+  if ((`stat -f%z "$basename-min.pdf"` < `stat -f%z "$basename.pdf"`)); then
+    rm "$basename.pdf"
+    mv "$basename-min.pdf" "$basename.pdf"
+  else
+    rm "$basename-min.pdf"
+  fi
 done
