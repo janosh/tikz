@@ -1,11 +1,9 @@
 #!/bin/bash
 
 # Bash script that recursively compresses all PDFs in encountered in the
-# directory provided as first argument. Requires ghostscript (cli: gs).
+# directory provided as first argument. Requires the ghostscript cli: gs.
 
-# You may want to first test this script by appending something -min or
-# similar ("$path/$filename-min.pdf") to the output file rather than
-# immediately compressing files in place.
+# Example invocation: scripts/pdfcompress.sh assets
 
 find "$1" -name "*.pdf" | while read file; do
   basename=${file%.pdf}
