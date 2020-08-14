@@ -43,8 +43,8 @@ Random collection of **86** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |                      ![gravitons](assets/gravitons/gravitons.png)                      |                                   ![isotherms](assets/isotherms/isotherms.png)                                    |
 |                 [`jensens-inequality.tex`](assets/jensens-inequality)                  |                                          [`k-space.tex`](assets/k-space)                                          |
 |        ![jensens-inequality](assets/jensens-inequality/jensens-inequality.png)         |                                      ![k-space](assets/k-space/k-space.png)                                       |
-|                    [`kohn-sham-cycle.tex`](assets/kohn-sham-cycle)                     |                                          [`komfort.tex`](assets/komfort)                                          |
-|             ![kohn-sham-cycle](assets/kohn-sham-cycle/kohn-sham-cycle.png)             |                                      ![komfort](assets/komfort/komfort.png)                                       |
+|                    [`kohn-sham-cycle.tex`](assets/kohn-sham-cycle)                     |                                             [`rnvp.tex`](assets/rnvp)                                             |
+|             ![kohn-sham-cycle](assets/kohn-sham-cycle/kohn-sham-cycle.png)             |                                           ![rnvp](assets/rnvp/rnvp.png)                                           |
 |                               [`loop.tex`](assets/loop)                                |                                            [`loops.tex`](assets/loops)                                            |
 |                             ![loop](assets/loop/loop.png)                              |                                         ![loops](assets/loops/loops.png)                                          |
 |                           [`m-theory.tex`](assets/m-theory)                            |                                      [`mexican-hat.tex`](assets/mexican-hat)                                      |
