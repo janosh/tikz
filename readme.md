@@ -31,8 +31,8 @@ Random collection of **86** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |                ![distributions](assets/distributions/distributions.png)                |                                  ![divergence](assets/divergence/divergence.png)                                  |
 |                 [`potential-triangle.tex`](assets/potential-triangle)                  |                                          [`dropout.tex`](assets/dropout)                                          |
 |        ![potential-triangle](assets/potential-triangle/potential-triangle.png)         |                                      ![dropout](assets/dropout/dropout.png)                                       |
-|                            [`energie.tex`](assets/energie)                             |                                          [`ergodic.tex`](assets/ergodic)                                          |
-|                         ![energie](assets/energie/energie.png)                         |                                      ![ergodic](assets/ergodic/ergodic.png)                                       |
+|                            [`physics.tex`](assets/physics)                             |                                          [`ergodic.tex`](assets/ergodic)                                          |
+|                         ![physics](assets/physics/physics.png)                         |                                      ![ergodic](assets/ergodic/ergodic.png)                                       |
 |                              [`fermi.tex`](assets/fermi)                               |                                        [`feynman-1.tex`](assets/feynman-1)                                        |
 |                            ![fermi](assets/fermi/fermi.png)                            |                                   ![feynman-1](assets/feynman-1/feynman-1.png)                                    |
 |                          [`feynman-2.tex`](assets/feynman-2)                           |                                        [`feynman-3.tex`](assets/feynman-3)                                        |
