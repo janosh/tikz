@@ -1,6 +1,6 @@
 \documentclass[tikz]{standalone}
 
-\usepackage{mathtools,cleveref}
+\usepackage{mathtools}
 
 \usetikzlibrary{positioning,arrows}
 
@@ -27,9 +27,9 @@
   \node [node distance=4ex,fill=blue!30,g,right=of equal] (energy) {$E_i$};
   \node [node distance=2ex,fill=gray!30,g,right=of energy] (phi2) {$\phi_i(\vec{r})$};
 
-  \node [c,above=of kinetic,xshift=5em] (kinetic comment) {nonrel. Schrödinger equation\\or relativistic Dirac equation};
+  \node [c,above=of kinetic,xshift=5em] (kinetic comment) {non-rel. Schrödinger equation\\or relativistic Dirac equation};
   \node [c,below=of external,xshift=-10em] (external comment) {crystal ions or\\pseudopotential};
-  \node [c,below=of hartree,xshift=5em] (hartree comment) {Poisson equation\\or equation \cref{eqn:hartree potential}};
+  \node [c,below=of hartree,xshift=5em] (hartree comment) {Poisson equation\\or Hartree potential};
   \node [c,above=of xc,xshift=-11em] (xc comment) {LDA or GGA\\or hybrids};
   \node [c,above=of phi1,xshift=5em] (phi comment) {physical orbitals or not\\mesh density and basis set};
   \node [c,below=of energy] (energy comment) {band structure\\ or not};
