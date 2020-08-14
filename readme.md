@@ -1,6 +1,6 @@
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **85** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **86** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Previews
 
@@ -87,5 +87,5 @@ Random collection of **85** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |                         ![zt-vs-n](assets/zt-vs-n/zt-vs-n.png)                         |                    ![change-of-variables](assets/change-of-variables/change-of-variables.png)                     |
 |                    [`four-vs-of-data.tex`](assets/four-vs-of-data)                     |                 [`materials-informatics-challenges.tex`](assets/materials-informatics-challenges)                 |
 |             ![four-vs-of-data](assets/four-vs-of-data/four-vs-of-data.png)             | ![materials-informatics-challenges](assets/materials-informatics-challenges/materials-informatics-challenges.png) |
-|                  [`nf-coupling-layer.tex`](assets/nf-coupling-layer)                   |                                                                                                                   |
-|          ![nf-coupling-layer](assets/nf-coupling-layer/nf-coupling-layer.png)          |                                                                                                                   |
+|                  [`nf-coupling-layer.tex`](assets/nf-coupling-layer)                   |                                             [`made.tex`](assets/made)                                             |
+|          ![nf-coupling-layer](assets/nf-coupling-layer/nf-coupling-layer.png)          |                                           ![made](assets/made/made.png)                                           |
