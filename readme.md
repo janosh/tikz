@@ -63,8 +63,8 @@ Random collection of **86** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |                          ![saddle](assets/saddle/saddle.png)                           |                               ![sbs-aktionen](assets/sbs-aktionen/sbs-aktionen.png)                               |
 |                     [`seebeck-effect.tex`](assets/seebeck-effect)                      |                                            [`shell.tex`](assets/shell)                                            |
 |              ![seebeck-effect](assets/seebeck-effect/seebeck-effect.png)               |                                         ![shell](assets/shell/shell.png)                                          |
-|                         [`sicherheit.tex`](assets/sicherheit)                          |                                       [`sign-plane.tex`](assets/sign-plane)                                       |
-|                    ![sicherheit](assets/sicherheit/sicherheit.png)                     |                                  ![sign-plane](assets/sign-plane/sign-plane.png)                                  |
+|                        [`autoencoder.tex`](assets/autoencoder)                         |                                       [`sign-plane.tex`](assets/sign-plane)                                       |
+|                   ![autoencoder](assets/autoencoder/autoencoder.png)                   |                                  ![sign-plane](assets/sign-plane/sign-plane.png)                                  |
 |                               [`sign.tex`](assets/sign)                                |                                   [`relation-space.tex`](assets/relation-space)                                   |
 |                             ![sign](assets/sign/sign.png)                              |                            ![relation-space](assets/relation-space/relation-space.png)                            |
 |                        [`spontaneous.tex`](assets/spontaneous)                         |                                             [`tanh.tex`](assets/tanh)                                             |
