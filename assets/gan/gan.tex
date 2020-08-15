@@ -1,0 +1,38 @@
+% Generative adversarial network (GAN) architecture.
+% Adapted from https://github.com/PetarV-/TikZ/tree/master/Generative%20adversarial%20network.
+
+\documentclass[tikz]{standalone}
+
+\usepackage{mathtools}
+
+\usetikzlibrary{calc,positioning}
+
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+
+\begin{document}
+\begin{tikzpicture}[
+    ->, thick,
+    node/.style={circle, fill=teal!40},
+    label/.style={below, font=\footnotesize},
+  ]
+
+  \node[node] (zin) {$\vec z_\text{in}$};
+  \node[node, right=5em of zin] (fake) {$\vec x_\text{fake}$};
+  \draw (zin) -- node[above] {$G(\vec x)$} node[label] {generator} (fake);
+
+  \draw[<-] (zin) -- node[above] {$p_\theta(\vec z)$} node[label] {latent noise} ++(-2,0);
+  \node[node, above=of fake] (real) {$\vec x_\text{real}$};
+  \draw[<-] (real) -- node[above] {$p_\text{data}(\vec x)$} ++(-2,0);
+  \node[node, right=6em of fake] (D) at ($(fake)!0.5!(real)$) {$\vec x$};
+  \node[right=7em of D] (out) {real?};
+  \draw (D) -- node[above] {$D(\vec x)$} node[label] {discriminator} (out);
+
+  \node[right=2.5em of fake, circle, fill, inner sep=0.15em] (pt1) {};
+  \node[right=2.5em of real, circle, fill, inner sep=0.15em] (pt2) {};
+
+  \draw[-, dashed] (pt1) edge[bend left] (pt2);
+  \node[circle, fill=orange, inner sep=1mm] at ([xshift=-1.8ex, yshift=4em]pt1.north) (pt3) {};
+  \draw (fake) -- (pt1) (real) -- (pt2) (pt3) -- (D);
+
+\end{tikzpicture}
+\end{document}
