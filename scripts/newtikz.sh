@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Use as `./scripts/newtikz.sh assets/tex-file/tex-file.tex`.
+# From the project's root dir, use via `scripts/newtikz.sh assets/tex-file/tex-file.tex`.
 
 # Get name of directory containing the TeX file and cd into it.
 dir=${1%/*}
