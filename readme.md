@@ -11,8 +11,8 @@ Random collection of **87** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |                      ![boltzmann](assets/boltzmann/boltzmann.png)                      |                   ![bose-distribution-3d](assets/bose-distribution-3d/bose-distribution-3d.png)                   |
 |                  [`bose-distribution.tex`](assets/bose-distribution)                   |                                 [`branch-and-bound.tex`](assets/branch-and-bound)                                 |
 |          ![bose-distribution](assets/bose-distribution/bose-distribution.png)          |                         ![branch-and-bound](assets/branch-and-bound/branch-and-bound.png)                         |
-|                        [`branch-cuts.tex`](assets/branch-cuts)                         |                            [`cambridge-mphil-gantt.tex`](assets/cambridge-mphil-gantt)                            |
-|                   ![branch-cuts](assets/branch-cuts/branch-cuts.png)                   |                 ![cambridge-mphil-gantt](assets/cambridge-mphil-gantt/cambridge-mphil-gantt.png)                  |
+|                        [`branch-cuts.tex`](assets/branch-cuts)                         |                                      [`mphil-gantt.tex`](assets/mphil-gantt)                                      |
+|                   ![branch-cuts](assets/branch-cuts/branch-cuts.png)                   |                                ![mphil-gantt](assets/mphil-gantt/mphil-gantt.png)                                 |
 |                            [`concave.tex`](assets/concave)                             |                                        [`contour-1.tex`](assets/contour-1)                                        |
 |                         ![concave](assets/concave/concave.png)                         |                                   ![contour-1](assets/contour-1/contour-1.png)                                    |
 |                          [`contour-2.tex`](assets/contour-2)                           |                                        [`contour-3.tex`](assets/contour-3)                                        |
