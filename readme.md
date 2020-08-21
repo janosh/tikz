@@ -1,6 +1,6 @@
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **87** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **88** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Previews
 
@@ -89,5 +89,5 @@ Random collection of **87** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |             ![four-vs-of-data](assets/four-vs-of-data/four-vs-of-data.png)             | ![materials-informatics-challenges](assets/materials-informatics-challenges/materials-informatics-challenges.png) |
 |                  [`nf-coupling-layer.tex`](assets/nf-coupling-layer)                   |                                             [`made.tex`](assets/made)                                             |
 |          ![nf-coupling-layer](assets/nf-coupling-layer/nf-coupling-layer.png)          |                                           ![made](assets/made/made.png)                                           |
-|                                [`gan.tex`](assets/gan)                                 |                                                                                                                   |
-|                               ![gan](assets/gan/gan.png)                               |                                                                                                                   |
+|                                [`gan.tex`](assets/gan)                                 |                                              [`vae.tex`](assets/vae)                                              |
+|                               ![gan](assets/gan/gan.png)                               |                                            ![vae](assets/vae/vae.png)                                             |
