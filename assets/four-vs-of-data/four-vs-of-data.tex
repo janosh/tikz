@@ -1,6 +1,7 @@
 % Inspired by fig. 1 in https://api.semanticscholar.org/CorpusID:137734316.
+% The state of the 4 Vs in this diagram applies to materials science.
 
-\documentclass[tikz, border=0 2]{standalone}
+\documentclass[tikz]{standalone}
 
 \def\rA{3cm}
 \def\rB{1.1 * \rA}
@@ -16,7 +17,7 @@
     \draw [fill=orange!20] (0:\rA) arc(0:90:\rA) |- cycle;
     \draw [fill=orange!40] (0:\rA) arc(0:60:\rA) -- (0,0) -- cycle;
     \node at (25:0.6*\rA) {Veracity};
-    \draw[direction] (0:\rB) arc(0:90:\rB) node[pos=0.05, above right] {reference data} node[pos=0.95, above right] {high variance};
+    \draw[direction] (0:\rB) arc(0:90:\rB) node[pos=0.05, above right] {high variance} node[pos=0.95, above right] {reference data};
   \end{scope}
 
   \begin{scope}[shift={(-\s,\s)}]
@@ -38,7 +39,6 @@
     \draw [fill=yellow!40] (270:\rA) arc(270:290:\rA) -- (0,0) -- cycle;
     \node at (330:0.6*\rA) {Variety};
     \draw[direction] (270:\rB) arc(-90:0:\rB) node[pos=0.05, below right] {clustered} node[pos=0.95, below right] {heterogeneous};
-
   \end{scope}
 
 \end{tikzpicture}
