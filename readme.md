@@ -91,3 +91,18 @@ Random collection of **88** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |          ![nf-coupling-layer](assets/nf-coupling-layer/nf-coupling-layer.png)          |                                           ![made](assets/made/made.png)                                           |
 |                                [`gan.tex`](assets/gan)                                 |                                              [`vae.tex`](assets/vae)                                              |
 |                               ![gan](assets/gan/gan.png)                               |                                            ![vae](assets/vae/vae.png)                                             |
+
+## Scripts
+
+To run the [`/scripts`](scripts), you need the following dependencies:
+
+- [`pylovepdf`](https://github.com/AndyCyberSec/pylovepdf)
+- [`dotenv`](https://github.com/theskumar/python-dotenv)
+- [`gs` (GhostScript)](https://ghostscript.com)
+- [`pdf2svg`](https://github.com/dawbarton/pdf2svg)
+
+To run [`ilove_pdf_compress.py`](scripts/ilove_pdf_compress.py) directly or to use it via [`new_tikz.sh`](scripts/new_tikz.sh), you also need a free public API key from <https://developer.ilovepdf.com>. Add it to a `.env` in the project's root directory:
+
+```sh
+touch .env && echo "ILOVEPDF_PUBLIC_KEY=<your key>" >> .env
+```
