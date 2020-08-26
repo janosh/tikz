@@ -1,5 +1,6 @@
 % Generative adversarial network (GAN) architecture.
 % Adapted from https://github.com/PetarV-/TikZ/tree/master/Generative%20adversarial%20network.
+% A GAN has two parts. The discriminator $D$ acts as a classifier that learns to distinguish fake data produced by the generator $G$ from real data. $G$ incurs a penalty when $D$ detects implausible results. This signal is backpropagated through the generator weights such that $G$ learns to produce more realistic samples over time, eventually fooling the discriminator if training succeeds.
 
 \documentclass[tikz]{standalone}
 
@@ -7,12 +8,10 @@
 
 \usetikzlibrary{calc,positioning}
 
-\renewcommand{\vec}[1]{\boldsymbol{#1}}
-
 \begin{document}
 \begin{tikzpicture}[
     ->, thick,
-    node/.style={circle, fill=teal!40},
+    node/.style={circle, fill=teal!60},
     label/.style={below, font=\footnotesize},
   ]
 
@@ -20,18 +19,17 @@
   \node[node, right=5em of zin] (fake) {$\vec x_\text{fake}$};
   \draw (zin) -- node[above] {$G(\vec x)$} node[label] {generator} (fake);
 
-  \draw[<-] (zin) -- node[above] {$p_\theta(\vec z)$} node[label] {latent noise} ++(-2,0);
+  \draw[<-] (zin) -- node[above] {$p_\theta(\vec z)$} node[label] {latent noise} ++(-3,0);
   \node[node, above=of fake] (real) {$\vec x_\text{real}$};
-  \draw[<-] (real) -- node[above] {$p_\text{data}(\vec x)$} ++(-2,0);
+  \draw[<-] (real) -- node[above] {$p_\text{data}(\vec x)$} ++(-3,0);
   \node[node, right=6em of fake] (D) at ($(fake)!0.5!(real)$) {$\vec x$};
   \node[right=7em of D] (out) {real?};
   \draw (D) -- node[above] {$D(\vec x)$} node[label] {discriminator} (out);
 
-  \node[right=2.5em of fake, circle, fill, inner sep=0.15em] (pt1) {};
-  \node[right=2.5em of real, circle, fill, inner sep=0.15em] (pt2) {};
+  \coordinate[right=2.5em of fake, circle, fill, inner sep=0.15em] (pt1);
+  \coordinate[right=2.5em of real, circle, fill, inner sep=0.15em] (pt2);
 
-  \draw[-, dashed] (pt1) edge[bend left] (pt2);
-  \node[circle, fill=orange, inner sep=1mm] at ([xshift=-1.8ex, yshift=4em]pt1.north) (pt3) {};
+  \draw[-, dashed] (pt1) edge[bend left] coordinate[circle, fill=orange, inner sep=1mm, pos=0.7] (pt3) (pt2);
   \draw (fake) -- (pt1) (real) -- (pt2) (pt3) -- (D);
 
 \end{tikzpicture}
