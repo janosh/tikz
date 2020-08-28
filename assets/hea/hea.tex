@@ -1,0 +1,26 @@
+% Cartoon of the AlCoCrFeNi high entropy alloy (HEA) with body-centered cubic (BCC) lattice. HEAs also come in face-centered cubic (FCC) and hexagonal close packing (HCP). BCC HEAs typically have high yield strength and low ductility, vice versa for FCC HEAs.
+% https://wikipedia.org/wiki/High_entropy_alloys
+
+\documentclass[tikz]{standalone}
+
+\pgfmathdeclarerandomlist{colors}{{red!80}{teal}{blue!80}{orange}{blue!20}}
+
+\begin{document}
+\begin{tikzpicture}
+  \foreach \i in {1,...,12} {
+      \foreach \j in {1,...,4} {
+          \foreach \k in {1,...,4} {
+              \pgfmathrandomitem{\randColor}{colors}
+              \shade[ball color=\randColor] (-\i+0.3*\j, -0.2*\j+1.2*\k) circle(0.3);
+            }
+          \foreach \k in {1,...,3} {
+              \pgfmathrandomitem{\randColor}{colors}
+              \shade[ball color=\randColor] (-\i+0.5+0.3*\j, -0.2*\j+1.2*\k+0.6) circle(0.3);
+            }
+        }
+    }
+  \foreach \el/\color [count=\n] in {Al/red!80, Co/blue!80, Cr/teal, Fe/orange, Ni/blue!20} {
+      \shade[ball color=\color] (2, 5.5-\n) circle(0.3) node[right=1em] {\el};
+    }
+\end{tikzpicture}
+\end{document}
