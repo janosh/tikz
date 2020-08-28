@@ -1,6 +1,6 @@
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **89** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **90** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Previews
 
@@ -91,8 +91,8 @@ Random collection of **89** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |          ![nf-coupling-layer](assets/nf-coupling-layer/nf-coupling-layer.png)          |                                           ![made](assets/made/made.png)                                           |
 |                                [`gan.tex`](assets/gan)                                 |                                              [`vae.tex`](assets/vae)                                              |
 |                               ![gan](assets/gan/gan.png)                               |                                            ![vae](assets/vae/vae.png)                                             |
-|                                [`hea.tex`](assets/hea)                                 |                                                                                                                   |
-|                               ![hea](assets/hea/hea.png)                               |                                                                                                                   |
+|                                [`hea.tex`](assets/hea)                                 |                                   [`qm-cost-vs-acc.tex`](assets/qm-cost-vs-acc)                                   |
+|                               ![hea](assets/hea/hea.png)                               |                            ![qm-cost-vs-acc](assets/qm-cost-vs-acc/qm-cost-vs-acc.png)                            |
 
 ## Scripts
 
