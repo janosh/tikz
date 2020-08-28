@@ -24,4 +24,4 @@ svgo "$basepath.svg"
 
 # Convert PDF to PNG and compress.
 convert -density 400 "$basepath.pdf" "$basepath.png"
-imageoptim "$basepath.png"
+imageoptim -a --quality 40-60 --speed 5 "$basepath.png"
