@@ -20,7 +20,12 @@ python scripts/ilove_pdf_compress.py "$basepath.pdf"
 
 # Convert PDF to SVG and compress.
 pdf2svg "$basepath.pdf" "$basepath.svg"
-svgo "$basepath.svg"
+# If the SVG is larger than 2 MB, delete it instead of compressing. Don't want large files in the repo.
+if ((`stat -f%z "$basepath.svg"` > 2000000)); then
+  rm "$basepath.svg"
+else
+  svgo "$basepath.svg"
+fi
 
 # Convert PDF to PNG and compress.
 convert -density 400 "$basepath.pdf" "$basepath.png"
