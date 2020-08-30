@@ -1,6 +1,6 @@
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **91** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **92** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Previews
 
@@ -93,8 +93,8 @@ Random collection of **91** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |                               ![gan](assets/gan/gan.png)                               |                                            ![vae](assets/vae/vae.png)                                             |
 |                                [`hea.tex`](assets/hea)                                 |                                   [`qm-cost-vs-acc.tex`](assets/qm-cost-vs-acc)                                   |
 |                               ![hea](assets/hea/hea.png)                               |                            ![qm-cost-vs-acc](assets/qm-cost-vs-acc/qm-cost-vs-acc.png)                            |
-|                       [`roost-update.tex`](assets/roost-update)                        |                                                                                                                   |
-|                 ![roost-update](assets/roost-update/roost-update.png)                  |                                                                                                                   |
+|                       [`roost-update.tex`](assets/roost-update)                        |                                         [`sabatier.tex`](assets/sabatier)                                         |
+|                 ![roost-update](assets/roost-update/roost-update.png)                  |                                     ![sabatier](assets/sabatier/sabatier.png)                                     |
 
 ## Scripts
 
@@ -105,7 +105,7 @@ To run the [`/scripts`](scripts), you need the following dependencies:
 - [`gs` (GhostScript)](https://ghostscript.com)
 - [`pdf2svg`](https://github.com/dawbarton/pdf2svg)
 
-To run [`ilove_pdf_compress.py`](scripts/ilove_pdf_compress.py) directly or to use it via [`new_tikz.sh`](scripts/new_tikz.sh), you also need a free public API key from <https://developer.ilovepdf.com>. Add it to a `.env` in the project's root directory:
+To run [`ilove_pdf_compress.py`](scripts/ilove_pdf_compress.py) directly or use it via [`new_tikz.sh`](scripts/new_tikz.sh), you also need a free public API key from <https://developer.ilovepdf.com>. Add it to a `.env` in the project's root directory:
 
 ```sh
 touch .env && echo "ILOVEPDF_PUBLIC_KEY=<your key>" >> .env
