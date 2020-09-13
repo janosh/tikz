@@ -101,9 +101,10 @@ Random collection of **92** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 To run the [`/scripts`](scripts), you need the following dependencies:
 
 - [`pylovepdf`](https://github.com/AndyCyberSec/pylovepdf)
-- [`dotenv`](https://github.com/theskumar/python-dotenv)
+- [`python-dotenv`](https://github.com/theskumar/python-dotenv)
 - [`gs` (GhostScript)](https://ghostscript.com)
 - [`pdf2svg`](https://github.com/dawbarton/pdf2svg)
+- [`convert`](https://linux.die.net/man/1/convert) (part of [ImageMagick](https://imagemagick.org/script))
 
 To run [`ilove_pdf_compress.py`](scripts/ilove_pdf_compress.py) directly or use it via [`new_tikz.sh`](scripts/new_tikz.sh), you also need a free public API key from <https://developer.ilovepdf.com>. Add it to a `.env` in the project's root directory:
 
