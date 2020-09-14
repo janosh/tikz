@@ -28,10 +28,10 @@
   \node[znode, right=2.5 of z1] (zi) {$z_i$};
   \node[znode, right=of zi] (zip1) {$z_{i+1}$};
   \draw[flow] (zi) -- node[above, midway] {$f_{i+1}(z_i)$} (zip1);
-  \draw[flow] (z1) -- node[fill=white, pos=0.15, inner sep=1] {\textbf\dots} node[above, midway] {$f_i(z_{i-1})$} (zi);
+  \draw[flow, shorten <=5ex] (z1) -- node[pos=0.16, inner sep=1] {\textbf\dots} node[above, midway] {$f_i(z_{i-1})$} (zi);
 
   \node[znode, draw=green!70!black, right=2.5 of zip1] (zk) {$z_k$};
-  \draw[flow] (zip1) -- node[fill=white, pos=0.15, inner sep=1] {\textbf\dots} node[above, midway] {$f_k(z_{k-1})$} (zk);
+  \draw[flow, shorten <=5ex] (zip1) -- node[pos=0.16, inner sep=1] {\textbf\dots} node[above, midway] {$f_k(z_{k-1})$} (zk);
   \node[right=0 of zk, scale=1.2] {$= x$};
   \node[outer sep=0, inner sep=0, below=0.2 of z0, label={below:$z_0 \sim p_0(z_0)$}] (f0) {\distro{1}{0}{0}};
   \node[outer sep=0, inner sep=0, below=0.2 of zi, label={below:$z_i \sim p_i(z_i)$}] (fi) {\distro[70]{1}{1}{0}};
