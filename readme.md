@@ -1,6 +1,6 @@
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **95** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **96** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Previews
 
@@ -97,8 +97,8 @@ Random collection of **95** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |                 ![roost-update](assets/roost-update/roost-update.png)                  |                                     ![sabatier](assets/sabatier/sabatier.png)                                     |
 |                                [`maf.tex`](assets/maf)                                 |                                   [`self-attention.tex`](assets/self-attention)                                   |
 |                               ![maf](assets/maf/maf.png)                               |                            ![self-attention](assets/self-attention/self-attention.png)                            |
-|                   [`organic-molecule.tex`](assets/organic-molecule)                    |                                                                                                                   |
-|           ![organic-molecule](assets/organic-molecule/organic-molecule.png)            |                                                                                                                   |
+|                   [`organic-molecule.tex`](assets/organic-molecule)                    |                                          [`heatmap.tex`](assets/heatmap)                                          |
+|           ![organic-molecule](assets/organic-molecule/organic-molecule.png)            |                                      ![heatmap](assets/heatmap/heatmap.png)                                       |
 
 ## Scripts
 
