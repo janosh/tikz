@@ -1,6 +1,6 @@
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **97** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **98** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Previews
 
@@ -99,8 +99,8 @@ Random collection of **97** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |                               ![maf](assets/maf/maf.png)                               |                            ![self-attention](assets/self-attention/self-attention.png)                            |
 |                   [`organic-molecule.tex`](assets/organic-molecule)                    |                                          [`heatmap.tex`](assets/heatmap)                                          |
 |           ![organic-molecule](assets/organic-molecule/organic-molecule.png)            |                                      ![heatmap](assets/heatmap/heatmap.png)                                       |
-|              [`materials-informatics.tex`](assets/materials-informatics)               |                                                                                                                   |
-|    ![materials-informatics](assets/materials-informatics/materials-informatics.png)    |                                                                                                                   |
+|              [`materials-informatics.tex`](assets/materials-informatics)               |                                  [`geometric-bayes.tex`](assets/geometric-bayes)                                  |
+|    ![materials-informatics](assets/materials-informatics/materials-informatics.png)    |                          ![geometric-bayes](assets/geometric-bayes/geometric-bayes.png)                           |
 
 ## Scripts
 
