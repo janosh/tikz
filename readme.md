@@ -2,6 +2,11 @@
 
 Random collection of **98** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
+## Table of Contents
+
+- [Previews](#previews)
+- [Scripts](#scripts)
+
 ## Previews
 
 |                   [`detailed-balance.tex`](assets/detailed-balance)                    |                                            [`bloch.tex`](assets/bloch)                                            |
