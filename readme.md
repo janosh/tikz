@@ -1,6 +1,6 @@
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **99** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **100** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Table of Contents
 
@@ -106,8 +106,8 @@ Random collection of **99** [`standalone`](https://ctan.org/pkg/standalone) [Tik
 |           ![organic-molecule](assets/organic-molecule/organic-molecule.png)            |                                      ![heatmap](assets/heatmap/heatmap.png)                                       |
 |              [`materials-informatics.tex`](assets/materials-informatics)               |                                  [`geometric-bayes.tex`](assets/geometric-bayes)                                  |
 |    ![materials-informatics](assets/materials-informatics/materials-informatics.png)    |                          ![geometric-bayes](assets/geometric-bayes/geometric-bayes.png)                           |
-|                             [`conv2d.tex`](assets/conv2d)                              |                                                                                                                   |
-|                          ![conv2d](assets/conv2d/conv2d.png)                           |                                                                                                                   |
+|                             [`conv2d.tex`](assets/conv2d)                              |                                  [`skip-connection.tex`](assets/skip-connection)                                  |
+|                          ![conv2d](assets/conv2d/conv2d.png)                           |                          ![skip-connection](assets/skip-connection/skip-connection.png)                           |
 
 ## Scripts
 
