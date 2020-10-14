@@ -1,6 +1,6 @@
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **100** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **101** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Table of Contents
 
@@ -108,6 +108,8 @@ Random collection of **100** [`standalone`](https://ctan.org/pkg/standalone) [Ti
 |    ![materials-informatics](assets/materials-informatics/materials-informatics.png)    |                          ![geometric-bayes](assets/geometric-bayes/geometric-bayes.png)                           |
 |                             [`conv2d.tex`](assets/conv2d)                              |                                  [`skip-connection.tex`](assets/skip-connection)                                  |
 |                          ![conv2d](assets/conv2d/conv2d.png)                           |                          ![skip-connection](assets/skip-connection/skip-connection.png)                           |
+|                    [`wyckoff-positions`](assets/wyckoff-positions)                     |                                                                                                                   |
+|          ![wyckoff-positions](assets/wyckoff-positions/wyckoff-positions.png)          |                                                                                                                   |
 
 ## Scripts
 
