@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="site/public/favicon.svg" alt="TikZ" height=150>
+  <img src="site/static/favicon.svg" alt="TikZ" height=150>
 </p>
 
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)

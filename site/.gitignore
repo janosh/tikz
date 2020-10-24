@@ -1,0 +1,10 @@
+# dependencies
+node_modules
+
+# production build
+.svelte
+build
+static/images
+
+# deploy config
+.netlify

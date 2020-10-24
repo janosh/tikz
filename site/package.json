@@ -1,0 +1,24 @@
+{
+  "name": "svelte-tikz",
+  "description": "Experimental svelte@next-site showing some TikZ images",
+  "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
+  "homepage": "https://github.com/janosh/svelte-tikz#readme",
+  "repository": "https://github.com/janosh/svelte-tikz",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "svelte dev",
+    "build": "svelte build"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-run-script": "^2.1.7",
+    "@sveltejs/adapter-static": "^0.0.11",
+    "@sveltejs/kit": "0.0.22",
+    "@sveltejs/snowpack-config": "^0.0.3",
+    "eslint": "^7.12.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "prettier": "^2.1.2",
+    "prettier-plugin-svelte": "^1.4.1",
+    "svelte": "^3.29.4"
+  }
+}
