@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="site/public/favicon.svg" alt="TikZ" height=150>
+</p>
+
 # TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 
-Random collection of **101** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **103** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Table of Contents
 
@@ -108,6 +112,8 @@ Random collection of **101** [`standalone`](https://ctan.org/pkg/standalone) [Ti
 |    ![materials-informatics](assets/materials-informatics/materials-informatics.png)    |                          ![geometric-bayes](assets/geometric-bayes/geometric-bayes.png)                           |
 |                             [`conv2d.tex`](assets/conv2d)                              |                                  [`skip-connection.tex`](assets/skip-connection)                                  |
 |                          ![conv2d](assets/conv2d/conv2d.png)                           |                          ![skip-connection](assets/skip-connection/skip-connection.png)                           |
+|               [`harm-osc-energy-freq.tex`](assets/harm-osc-energy-freq)                |                         [`harm-osc-energy-inv-temp.tex`](assets/harm-osc-energy-inv-temp)                         |
+|     ![harm-osc-energy-freq](assets/harm-osc-energy-freq/harm-osc-energy-freq.png)      |             ![harm-osc-energy-inv-temp](assets/harm-osc-energy-inv-temp/harm-osc-energy-inv-temp.png)             |
 |                    [`wyckoff-positions`](assets/wyckoff-positions)                     |                                                                                                                   |
 |          ![wyckoff-positions](assets/wyckoff-positions/wyckoff-positions.png)          |                                                                                                                   |
 
