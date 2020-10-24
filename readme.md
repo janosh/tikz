@@ -33,7 +33,7 @@ Random collection of **103** [`standalone`](https://ctan.org/pkg/standalone) [Ti
 |                               [`cuts.tex`](assets/cuts)                                |                                       [`otto-cycle.tex`](assets/otto-cycle)                                       |
 |                             ![cuts](assets/cuts/cuts.png)                              |                                  ![otto-cycle](assets/otto-cycle/otto-cycle.png)                                  |
 |                [`contour-deformation.tex`](assets/contour-deformation)                 |                                      [`dft-choices.tex`](assets/dft-choices)                                      |
-|           ![contour-deformation](assets/deformation/contour-deformation.png)           |                                ![dft-choices](assets/dft-choices/dft-choices.png)                                 |
+|       ![contour-deformation](assets/contour-deformation/contour-deformation.png)       |                                ![dft-choices](assets/dft-choices/dft-choices.png)                                 |
 |                            [`diagram.tex`](assets/diagram)                             |                                         [`diagrams.tex`](assets/diagrams)                                         |
 |                         ![diagram](assets/diagram/diagram.png)                         |                                     ![diagrams](assets/diagrams/diagrams.png)                                     |
 |                      [`distributions.tex`](assets/distributions)                       |                                       [`divergence.tex`](assets/divergence)                                       |
