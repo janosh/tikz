@@ -16,4 +16,17 @@
   :global(a):hover {
     color: orange;
   }
+  :global(button) {
+    font-size: 2ex;
+    background: #3f51b5;
+    border: none;
+    outline: none;
+    padding: 3pt 1ex;
+    border-radius: 1ex;
+    transition: 0.2s;
+    color: white;
+  }
+  :global(button:hover) {
+    background: teal;
+  }
 </style>

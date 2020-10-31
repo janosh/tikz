@@ -30,6 +30,7 @@
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
     margin: auto;
+    justify-items: center;
   }
   .col {
     display: grid;
