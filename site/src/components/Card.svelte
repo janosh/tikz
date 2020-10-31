@@ -3,15 +3,13 @@
   const { slug, title } = item
 </script>
 
-<div>
-  <a href={slug}>
-    <h2>{title}</h2>
-    <img src="images/{slug}.png" alt={title} />
-  </a>
-</div>
+<a href={slug}>
+  <h2>{title}</h2>
+  <img src="images/{slug}.png" alt={title} />
+</a>
 
 <style>
-  div {
+  a {
     display: grid;
     place-content: center;
     border-radius: 1ex;
@@ -21,7 +19,7 @@
     background: #595975;
     transition: 0.5s;
   }
-  div:hover {
+  a:hover {
     transform: scale(1.02);
   }
   h2 {

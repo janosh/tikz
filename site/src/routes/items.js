@@ -1,4 +1,5 @@
-import items from './tikz.js'
+import slugs from './slugs.js'
+import tikz from './tikz.js'
 
 const upperFirst = (str) => str[0].toUpperCase() + str.slice(1)
 const isProposition = (str) => [`and`, `to`, `vs`].includes(str)
@@ -8,4 +9,8 @@ const slugToTitle = (slug) =>
     .map((str) => (isProposition(str) ? str : upperFirst(str)))
     .join(` `)
 
-export default items.map((slug) => ({ title: slugToTitle(slug), slug }))
+export default slugs.map((slug, idx) => ({
+  title: slugToTitle(slug),
+  slug,
+  code: tikz[idx],
+}))

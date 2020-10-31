@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@snowpack/plugin-run-script": "^2.2.0",
-    "@sveltejs/adapter-static": "^0.0.13",
+    "@sveltejs/adapter-static": "0.0.12",
     "@sveltejs/kit": "0.0.24",
     "@sveltejs/snowpack-config": "^0.0.5",
     "eslint": "^7.12.1",

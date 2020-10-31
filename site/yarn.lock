@@ -136,12 +136,19 @@
     svelte-hmr "^0.11.2"
     svelte-preprocess "^4.5.2"
 
-"@sveltejs/adapter-static@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-0.0.13.tgz#153723443e66d4de49b94bd866254370d0ac93fd"
-  integrity sha512-QIuMXDESmxHczH4fKJXAC7cn4qs7Flxaht7AdWJGKIF0xbHmSOQggwJIrotp8czohvp8tJP45mYHf8LxIFx3Sg==
+"@sveltejs/adapter-static@0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-static/-/adapter-static-0.0.12.tgz#5a9e86433f33983e179196a49f4f8d2037fd2b6a"
+  integrity sha512-P+m5P7KFkkrHY08HGfPxmP8swskpxUTj1btxPEkgItqlIVJPb2J+P1YBEmeMEDeWoAW4hWYRZmrw9IRZgzaBaA==
   dependencies:
-    "@sveltejs/app-utils" "0.0.16"
+    "@sveltejs/app-utils" "0.0.15"
+
+"@sveltejs/app-utils@0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@sveltejs/app-utils/-/app-utils-0.0.15.tgz#6d71f842f30a00584b80adeb8a2f3dcc09a3cf55"
+  integrity sha512-M9xAXus7NHTmHPb1CtYp6Pv4BW77mzP+J/S+6aQa8ohO+CljSz5eilHNfE3I6B9L30tcwVCEd1rJQBtdmhf2SQ==
+  dependencies:
+    mime "^2.4.6"
 
 "@sveltejs/app-utils@0.0.16":
   version "0.0.16"
