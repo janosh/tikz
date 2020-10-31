@@ -11,11 +11,11 @@
     "build": "svelte build"
   },
   "devDependencies": {
-    "@snowpack/plugin-run-script": "^2.1.7",
-    "@sveltejs/adapter-static": "^0.0.11",
-    "@sveltejs/kit": "0.0.22",
-    "@sveltejs/snowpack-config": "^0.0.3",
-    "eslint": "^7.12.0",
+    "@snowpack/plugin-run-script": "^2.2.0",
+    "@sveltejs/adapter-static": "^0.0.13",
+    "@sveltejs/kit": "0.0.24",
+    "@sveltejs/snowpack-config": "^0.0.5",
+    "eslint": "^7.12.1",
     "eslint-plugin-svelte3": "^2.7.3",
     "prettier": "^2.1.2",
     "prettier-plugin-svelte": "^1.4.1",

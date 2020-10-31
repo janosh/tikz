@@ -1,16 +1,13 @@
 <script>
   export let item
-  const upperFirst = (str) => str[0].toUpperCase() + str.slice(1)
-  const isProposition = (str) => [`and`, `to`, `vs`].includes(str)
-  const title = item
-    .split(`-`)
-    .map((str) => (isProposition(str) ? str : upperFirst(str)))
-    .join(` `)
+  const { slug, title } = item
 </script>
 
 <div>
-  <h2>{title}</h2>
-  <img src="images/{item}.png" alt={item} />
+  <a href={slug}>
+    <h2>{title}</h2>
+    <img src="images/{slug}.png" alt={title} />
+  </a>
 </div>
 
 <style>

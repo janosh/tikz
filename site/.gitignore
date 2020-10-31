@@ -5,6 +5,7 @@ node_modules
 .svelte
 build
 static/images
+src/routes/tikz.js
 
 # deploy config
 .netlify
