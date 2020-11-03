@@ -5,7 +5,7 @@
 
 <a href={slug}>
   <h2>{title}</h2>
-  <img src="images/{slug}.png" alt={title} />
+  <img src="assets/{slug}/{slug}.png" alt={title} />
 </a>
 
 <style>

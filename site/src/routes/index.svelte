@@ -19,7 +19,7 @@
 </p>
 
 <div class="controls">
-  <Slider label="minColWidth" bind:value={minColWidth} min="10" max={maxColWidth} />
+  <Slider label="minColWidth" bind:value={minColWidth} min="200" max={maxColWidth} />
   <Slider label="maxColWidth" bind:value={maxColWidth} min={minColWidth} max="800" />
   <Slider label="gap" bind:value={gap} min="1" max="50" />
 </div>

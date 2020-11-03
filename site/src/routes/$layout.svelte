@@ -3,7 +3,7 @@
 <style>
   :global(body) {
     background: #090019;
-    padding: 2em;
+    padding: 2vw;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
     color: white;
     text-align: center;
@@ -28,5 +28,6 @@
   }
   :global(button:hover) {
     background: teal;
+    transform: scale(1.02);
   }
 </style>
