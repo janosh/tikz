@@ -5,8 +5,11 @@
 <script>
   import Prism from '$components/Prism.svelte'
   import items from './items'
+
   export let slug
+
   const { title, code } = items.find((itm) => itm.slug === slug) || {}
+  const link = `GitHub||https://github.com/janosh/tikz/blob/master/assets/{slug}/{slug}.tex`
 </script>
 
 <a href="/" class="back">&laquo; back</a>
@@ -20,9 +23,7 @@
 <a href="assets/{slug}/{slug}.tex" target="_blank">TeX</a>
 
 <h2>Code</h2>
-<Prism
-  {code}
-  link="GitHub||https://github.com/janosh/tikz/blob/master/assets/{slug}/{slug}.tex" />
+<Prism {code} title="{slug}.tex" {link} />
 
 <style>
   h1,
