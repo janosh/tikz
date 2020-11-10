@@ -6,6 +6,8 @@
 
   let [minColWidth, maxColWidth] = [330, 500]
   let gap = 20
+  let query
+  $: filteredItems = items.filter((itm) => !query || itm.slug.includes(query))
 </script>
 
 <h1>Random Tikz Collection</h1>
@@ -24,7 +26,9 @@
   <Slider label="gap" bind:value={gap} min="1" max="50" />
 </div>
 
-<Masonry {items} {minColWidth} {maxColWidth} {gap} let:item>
+<input name="Search" bind:value={query} placeholder="Search..." />
+
+<Masonry items={filteredItems} {minColWidth} {maxColWidth} {gap} let:item id="slug">
   <Card {item} />
 </Masonry>
 
@@ -38,5 +42,19 @@
     margin: 3em auto;
     gap: 1em;
     place-content: center;
+  }
+  input {
+    margin-bottom: 2em;
+    font-size: 2ex;
+    border: none;
+    outline: none;
+    padding: 4pt 1ex;
+    border-radius: 1ex;
+    color: inherit;
+    background: black;
+    box-shadow: 0 0 1ex #333;
+  }
+  input::placeholder {
+    color: white;
   }
 </style>
