@@ -2,7 +2,7 @@
   <img src="site/static/favicon.svg" alt="TikZ" height=150>
 </p>
 
-# TikZ Standalone [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
+# TikZ Standalone [![Made with LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org) [![Site](https://img.shields.io/badge/Site-Experimental-blue)](https://svelte-tikz.netlify.app) [![License](https://img.shields.io/github/license/janosh/tikz?label=License)](/license)
 
 Random collection of **103** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 

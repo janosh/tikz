@@ -24,6 +24,7 @@
   }
   h2 {
     margin: 1ex;
+    color: white;
   }
   img {
     box-sizing: border-box;
