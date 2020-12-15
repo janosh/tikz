@@ -1,10 +1,22 @@
 <p align="center">
-  <img src="site/static/favicon.svg" alt="TikZ" height=150>
+  <a href="https://svelte-tikz.netlify.app">
+    <img src="site/static/favicon.svg" alt="TikZ" height=150>
+  </a>
 </p>
 
-# TikZ Standalone [![Made with LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org) [![Site](https://img.shields.io/badge/Site-Experimental-blue)](https://svelte-tikz.netlify.app) [![License](https://img.shields.io/github/license/janosh/tikz?label=License)](/license)
+<h1 align="center">TikZ Standalone</h1>
 
-Random collection of **103** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+<h3 align="center">
+
+[![Made with LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
+[![Site](https://img.shields.io/badge/Site-Experimental-blue)](https://svelte-tikz.netlify.app)
+[![License](https://img.shields.io/github/license/janosh/tikz?label=License)](/license)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/janosh/tikz?label=Repo+Size)
+[![GitHub last commit](https://img.shields.io/github/last-commit/janosh/tikz?label=Last+Commit)](https://github.com/janosh/tikz/commits)
+
+</h3>
+
+Random collection of **104** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
 
 ## Table of Contents
 
@@ -114,8 +126,8 @@ Random collection of **103** [`standalone`](https://ctan.org/pkg/standalone) [Ti
 |                          ![conv2d](assets/conv2d/conv2d.png)                           |                          ![skip-connection](assets/skip-connection/skip-connection.png)                           |
 |               [`harm-osc-energy-freq.tex`](assets/harm-osc-energy-freq)                |                         [`harm-osc-energy-inv-temp.tex`](assets/harm-osc-energy-inv-temp)                         |
 |     ![harm-osc-energy-freq](assets/harm-osc-energy-freq/harm-osc-energy-freq.png)      |             ![harm-osc-energy-inv-temp](assets/harm-osc-energy-inv-temp/harm-osc-energy-inv-temp.png)             |
-|                    [`wyckoff-positions`](assets/wyckoff-positions)                     |                                                                                                                   |
-|          ![wyckoff-positions](assets/wyckoff-positions/wyckoff-positions.png)          |                                                                                                                   |
+|                    [`wyckoff-positions`](assets/wyckoff-positions)                     |                                           [`aviary.tex`](assets/aviary)                                           |
+|          ![wyckoff-positions](assets/wyckoff-positions/wyckoff-positions.png)          |                                        ![aviary](assets/aviary/aviary.png)                                        |
 
 ## Scripts
 

@@ -30,4 +30,4 @@ fi
 # Convert PDF to PNG at low and high resolution, then compress both.
 convert -density 200 "$basepath.pdf" "$basepath.png"
 convert -density 400 "$basepath.pdf" "$basepath-hd.png"
-imageoptim -a --quality 40-60 --speed 5 "$basepath*.png"
+imageoptim --quality 40-60 --speed 5 "$basepath*.png"
