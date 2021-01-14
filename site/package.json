@@ -1,24 +1,27 @@
 {
-  "name": "svelte-tikz",
-  "description": "Experimental svelte@next-site showing some TikZ images",
   "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
-  "homepage": "https://github.com/janosh/svelte-tikz#readme",
-  "repository": "https://github.com/janosh/svelte-tikz",
-  "license": "MIT",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "svelte dev",
-    "build": "svelte build"
-  },
+  "description": "Experimental svelte@next-site showing some TikZ images",
   "devDependencies": {
-    "@snowpack/plugin-run-script": "^2.2.0",
-    "@sveltejs/adapter-static": "0.0.14",
-    "@sveltejs/kit": "0.0.25",
-    "@sveltejs/snowpack-config": "^0.0.5",
-    "eslint": "^7.12.1",
-    "eslint-plugin-svelte3": "^2.7.3",
-    "prettier": "^2.1.2",
-    "prettier-plugin-svelte": "^1.4.1",
-    "svelte": "^3.29.4"
-  }
+    "@snowpack/plugin-run-script": "^2.3.0",
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "@sveltejs/snowpack-config": "next",
+    "eslint": "^7.17.0",
+    "eslint-plugin-svelte3": "^3.0.0",
+    "mdsvex": "^0.8.9",
+    "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^2.1.0",
+    "snowpack-plugin-mdsvex": "^0.2.2",
+    "svelte": "^3.31.2"
+  },
+  "homepage": "https://github.com/janosh/svelte-tikz#readme",
+  "license": "MIT",
+  "name": "svelte-tikz",
+  "repository": "https://github.com/janosh/svelte-tikz",
+  "scripts": {
+    "build": "svelte-kit build",
+    "dev": "svelte-kit dev",
+    "start": "svelte-kit start"
+  },
+  "version": "1.0.0"
 }

@@ -1,3 +1,3 @@
 module.exports = {
-  adapter: `@sveltejs/adapter-static`,
+  kit: { adapter: `@sveltejs/adapter-static` },
 }

@@ -1,6 +1,6 @@
 semi: false
 singleQuote: true
-svelteSortOrder: scripts-markup-styles
+svelteBracketNewLine: false
 overrides:
   - files: '*.svelte'
     options:
