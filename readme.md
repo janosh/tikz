@@ -20,10 +20,10 @@ Random collection of **104** [`standalone`](https://ctan.org/pkg/standalone) [Ti
 
 ## Table of Contents
 
-- [Previews](#previews)
+- [Images](#images)
 - [Scripts](#scripts)
 
-## Previews
+## Images
 
 |                   [`detailed-balance.tex`](assets/detailed-balance)                    |                                            [`bloch.tex`](assets/bloch)                                            |
 | :------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
@@ -131,7 +131,7 @@ Random collection of **104** [`standalone`](https://ctan.org/pkg/standalone) [Ti
 
 ## Scripts
 
-To run the [`/scripts`](scripts), you need the following dependencies:
+Files in [`/scripts`](scripts) render and compress the standalone `.tex` files in [`/assets`](assets) to various output formats: low + high-res PNG, PDF and SVG. To run them, you need the following dependencies:
 
 - [`pylovepdf`](https://github.com/AndyCyberSec/pylovepdf)
 - [`python-dotenv`](https://github.com/theskumar/python-dotenv)
@@ -139,7 +139,7 @@ To run the [`/scripts`](scripts), you need the following dependencies:
 - [`pdf2svg`](https://github.com/dawbarton/pdf2svg)
 - [`convert`](https://linux.die.net/man/1/convert) (part of [ImageMagick](https://imagemagick.org/script))
 
-To run [`ilove_pdf_compress.py`](scripts/ilove_pdf_compress.py) directly or use it via [`new_tikz.sh`](scripts/new_tikz.sh), you also need a free public API key from <https://developer.ilovepdf.com>. Add it to a `.env` in the project's root directory:
+To run [`ilove_pdf_compress.py`](scripts/ilove_pdf_compress.py) directly or use it as part of the [`render_tikz.sh`](scripts/render_tikz.sh) pipeline, you also need a free public API key from <https://developer.ilovepdf.com>. Add it to a `.env` in the project's root directory:
 
 ```sh
 touch .env && echo "ILOVEPDF_PUBLIC_KEY=<your key>" >> .env
