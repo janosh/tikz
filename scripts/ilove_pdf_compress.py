@@ -5,6 +5,7 @@
 
 import os
 import sys
+from os.path import expanduser
 
 from dotenv import load_dotenv
 from pylovepdf.tools.compress import Compress
@@ -61,10 +62,16 @@ for pdf_path in pdfs:
         print(
             f"Compressed file is {sizeof_fmt(compressed_size)} "
             f"which is {sizeof_fmt(diff)} ({percent_diff:.2g} %) "
-            f"smaller than the original ({sizeof_fmt(orig_size)})"
+            f"smaller than the original ({sizeof_fmt(orig_size)})."
         )
-        print("Using the compressed file")
-        os.remove(pdf_path)
+        print("Using the compressed file.")
+        if sys.platform == "darwin":  # move file to trash on macOS
+            print("Old file moved to trash.")
+            HOME = expanduser("~")
+            os.rename(pdf_path, f"{HOME}/.Trash/{pdf_name}")
+        else:  # simply delete it on other OSes
+            print("Old file deleted.")
+            os.remove(pdf_path)
         os.rename(compressed_pdf_path, pdf_path)
     else:
         print("Compressed PDF is no smaller than the original")

@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Bash script that recursively compresses all PDFs in encountered in the
-# directory provided as first argument. Requires the ghostscript cli: gs.
+# directory provided as first argument. Requires the ghostscript CLI
+# (brew install ghostscript).
 
 # Example invocation: scripts/pdfcompress.sh assets
 
