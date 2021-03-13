@@ -6,7 +6,7 @@
 
   let [linkTitle, url] = (link ?? ``).split(`||`, 2)
 
-  const onLoad = () => window.Prism.highlightAll()
+  const onLoad = () => window.Prism?.highlightAll()
   onMount(onLoad) // for page reloads
 
   const cdn = `https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0`

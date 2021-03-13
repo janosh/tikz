@@ -1,5 +1,8 @@
 <script context="module">
-  export const preload = async ({ params }) => params
+  export function load({ page }) {
+    const { slug } = page.params
+    return { props: { slug } }
+  }
 </script>
 
 <script>
@@ -9,12 +12,13 @@
   export let slug
 
   const { title, code } = items.find((itm) => itm.slug === slug) || {}
-  const link = `GitHub||https://github.com/janosh/tikz/blob/master/assets/{slug}/{slug}.tex`
+  const link = `GitHub||https://github.com/janosh/tikz/blob/master/assets/${slug}/${slug}.tex`
 </script>
 
 <a href="/" class="back">&laquo; back</a>
 <h1>{title}</h1>
 <img src="assets/{slug}/{slug}-hd.png" alt={title} />
+
 <h2>Download</h2>
 <a href="assets/{slug}/{slug}.png" target="_blank">PNG</a>
 <a href="assets/{slug}/{slug}-hd.png" target="_blank">PNG (HD)</a>
@@ -53,8 +57,10 @@
   }
   a[target='_blank'] {
     line-height: 2em;
+    font-size: 3ex;
   }
   a.back {
+    font-size: 3ex;
     position: absolute;
     top: 2em;
     left: 2em;

@@ -42,6 +42,9 @@
   h1 {
     font-size: calc(1em + 3vw);
   }
+  p {
+    font-size: 2.2ex;
+  }
   .controls {
     display: flex;
     flex-wrap: wrap;

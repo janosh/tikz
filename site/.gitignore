@@ -4,6 +4,7 @@ node_modules
 # production build
 .svelte
 build
+functions
 static/assets
 src/routes/slugs.js
 src/routes/tikz.js

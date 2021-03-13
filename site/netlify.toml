@@ -1,2 +1,8 @@
 [build]
-  command = "svelte-kit build"
+command = "svelte-kit build"
+functions = "functions"
+publish = "build"
+
+[build.environment]
+NODE_VERSION = "15.5.1"
+YARN_VERSION = "1.22.10"
