@@ -9,7 +9,7 @@
 <h3 align="center">
 
 [![Made with LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
-[![Site](https://img.shields.io/badge/Site-Experimental-blue)](https://svelte-tikz.netlify.app)
+[![Site](https://img.shields.io/badge/Site-Svelte-blue)](https://svelte-tikz.netlify.app)
 [![License](https://img.shields.io/github/license/janosh/tikz?label=License)](/license)
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/janosh/tikz?label=Repo+Size)
 [![GitHub last commit](https://img.shields.io/github/last-commit/janosh/tikz?label=Last+Commit)](https://github.com/janosh/tikz/commits)
