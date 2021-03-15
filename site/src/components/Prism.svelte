@@ -1,5 +1,5 @@
 <script>
-  import CopyButton from '$components/CopyButton.svelte'
+  import CopyButton from './CopyButton.svelte'
   import { onMount } from 'svelte'
 
   export let code, link, title
@@ -13,10 +13,10 @@
 </script>
 
 <svelte:head>
-  <link rel="stylesheet" href="{cdn}/themes/prism-okaidia.min.css" /><script
-    src="{cdn}/prism.min.js">
-  </script><script src="{cdn}/components/prism-latex.min.js" on:load={onLoad}>
-  </script></svelte:head>
+  <link rel="stylesheet" href="{cdn}/themes/prism-okaidia.min.css" />
+  <script src="{cdn}/prism.min.js"></script>
+  <script src="{cdn}/components/prism-latex.min.js" on:load={onLoad}></script>
+</svelte:head>
 
 <div>
   {#if title}

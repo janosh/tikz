@@ -9,6 +9,7 @@
 <h3 align="center">
 
 [![Made with LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0303431-0e3a-44f8-af97-1071ec922f53/deploy-status)](https://app.netlify.com/sites/svelte-tikz/deploys)
 [![Site](https://img.shields.io/badge/Site-Svelte-blue)](https://svelte-tikz.netlify.app)
 [![License](https://img.shields.io/github/license/janosh/tikz?label=License)](/license)
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/janosh/tikz?label=Repo+Size)

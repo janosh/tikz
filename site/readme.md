@@ -4,7 +4,7 @@
 
 # Svelte TikZ
 
-Experimental site using `svelte@next` as demoed in [Rich Harris: Futuristic Web Development](https://youtu.be/qSfdtmcZ4d0). Initialized `npm init svelte@next my-app`. [Live version available here](https://svelte-tikz.netlify.app).
+Gallery site using `svelte-kit` as demoed in [Rich Harris: Futuristic Web Development](https://youtu.be/qSfdtmcZ4d0).
 
 ## Get started
 
@@ -22,19 +22,19 @@ Experimental site using `svelte@next` as demoed in [Rich Harris: Futuristic Web 
    yarn dev
    ```
 
-Navigate to <http://localhost:3000>. You should see this app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Navigate to <http://localhost:3000>. You should see this app running. Edit a component file in `src`, save it and the page should hot-reload to display your changes.
 
 ## Building and running in production mode
 
 To build and serve an optimized version of the app, run
 
 ```sh
-yarn serve
+yarn build && yarn start
 ```
 
 ## Building
 
-Svelte apps are built with _adapters_, which optimise your project for deployment to different environments, like [Begin](https://begin.com), [Netlify](https://www.netlify.com), [Vercel](https://vercel.com) and so on. (You can also create your own adapter — instructions TODO.)
+Svelte apps are built with _adapters_, which optimise your project for deployment to different environments, like [Begin](https://begin.com), [Netlify](https://netlify.com), [Vercel](https://vercel.com) and so on. (You can also create your own adapter — instructions TODO.)
 
 By default, `yarn build` will generate a Node app that you can run with `node build`. To use a different adapter, install it and update your `svelte.config.js` accordingly. The following official adapters are available:
 
@@ -48,13 +48,13 @@ By default, `yarn build` will generate a Node app that you can run with `node bu
 Install `netlify` if you haven't already:
 
 ```sh
-yarn global add netlify
+yarn global add netlify-cli
 ```
 
-Then, from within this project's folder:
+Then, from within this project's folder after creating a production build with `yarn build`:
 
 ```sh
-netlify deploy --prod
+netlify init && netlify deploy --prod
 ```
 
 ## Formatting

@@ -7,16 +7,19 @@
 
 <script>
   import Prism from '$components/Prism.svelte'
-  import items from './items'
+  import texFiles from './texFiles'
 
   export let slug
 
-  const { title, code } = items.find((itm) => itm.slug === slug) || {}
-  const link = `GitHub||https://github.com/janosh/tikz/blob/master/assets/${slug}/${slug}.tex`
+  $: ({ title, desc, code } = texFiles.find((itm) => itm.slug === slug) || {})
+  $: link = `GitHub||https://github.com/janosh/tikz/blob/master/assets/${slug}/${slug}.tex`
 </script>
 
-<a href="/" class="back">&laquo; back</a>
+<a href="/#{slug}" class="back" sveltekit:prefetch>&laquo; back</a>
 <h1>{title}</h1>
+{#if desc}
+  <p>{@html desc}</p>
+{/if}
 <img src="assets/{slug}/{slug}-hd.png" alt={title} />
 
 <h2>Download</h2>
@@ -36,6 +39,11 @@
     max-width: 10em;
     margin: 2em auto 1em;
     padding-bottom: 8pt;
+  }
+  p {
+    max-width: 42em;
+    margin: 1em auto;
+    padding: 1em;
   }
   img {
     width: 100%;

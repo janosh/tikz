@@ -6,7 +6,6 @@
     "@sveltejs/kit": "^1.0.0-next.45",
     "eslint": "^7.22.0",
     "eslint-plugin-svelte3": "^3.1.2",
-    "mdsvex": "^0.8.9",
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
     "svelte": "^3.35.0",
@@ -19,8 +18,8 @@
   "scripts": {
     "build": "svelte-kit build",
     "dev": "svelte-kit dev",
-    "prebuild": "node src/getTikz.js",
-    "predev": "node src/getTikz.js",
+    "prebuild": "yarn symlinkAssets && node src/parseTexFiles.js",
+    "predev": "node src/parseTexFiles.js",
     "start": "svelte-kit start",
     "symlinkAssets": "ln -sf $PWD/../assets $PWD/static"
   },

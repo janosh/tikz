@@ -2,16 +2,16 @@
   import Masonry from '$components/Masonry.svelte'
   import Slider from '$components/Slider.svelte'
   import Card from '$components/Card.svelte'
-  import items from './items'
+  import texFiles from './texFiles'
   import IntersectionObserver from '../components/IntersectionObserver.svelte'
 
   let [minColWidth, maxColWidth] = [330, 500]
   let gap = 20
   let query
   let nVisible = 24
-  const onIntersect = () => (nVisible += 24)
+  const onIntersect = () => (nVisible += 12)
 
-  $: filtered = items.filter((itm) => !query || itm.slug.includes(query))
+  $: filtered = texFiles.filter((itm) => !query || itm.slug.includes(query))
   $: visible = filtered.slice(0, nVisible)
 </script>
 

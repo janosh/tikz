@@ -1,6 +1,8 @@
 <script>
   export let content
+
   let btn
+
   function copy() {
     navigator.clipboard.writeText(content).then(
       () => {

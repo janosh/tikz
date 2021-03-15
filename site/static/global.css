@@ -1,0 +1,28 @@
+body {
+  background: #090019;
+  padding: 2vw;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+  color: white;
+  text-align: center;
+}
+a {
+  color: #0075ff;
+  text-decoration: none;
+}
+a:hover {
+  color: orange;
+}
+button {
+  font-size: 2ex;
+  background: #3f51b5;
+  border: none;
+  outline: none;
+  padding: 3pt 1ex;
+  border-radius: 1ex;
+  transition: 0.2s;
+  color: white;
+}
+button:hover {
+  background: teal;
+  transform: scale(1.02);
+}
