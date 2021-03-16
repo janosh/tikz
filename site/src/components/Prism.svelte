@@ -1,6 +1,6 @@
 <script>
   import CopyButton from './CopyButton.svelte'
-  import { onMount } from 'svelte'
+  import { onMount, afterUpdate } from 'svelte'
 
   export let code, link, title
 
@@ -8,6 +8,7 @@
 
   const onLoad = () => window.Prism?.highlightAll()
   onMount(onLoad) // for page reloads
+  afterUpdate(onLoad)
 
   const cdn = `https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0`
 </script>

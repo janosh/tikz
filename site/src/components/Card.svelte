@@ -1,12 +1,12 @@
 <script>
   export let item
 
-  const { slug, title, desc } = item
+  const { slug, title, desc, width, height } = item
 </script>
 
 <a href={slug} sveltekit:prefetch>
   <h2 id={slug}>{title}</h2>
-  <img src="assets/{slug}/{slug}.png" alt={title} />
+  <img src="assets/{slug}/{slug}.png" alt={title} {width} {height} />
   {#if desc}
     <p>{@html desc}</p>
   {/if}
@@ -37,6 +37,7 @@
     margin: 1ex;
     padding: 1ex;
     border-radius: 4pt;
+    height: auto;
   }
   p {
     padding: 1ex 1em;

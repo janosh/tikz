@@ -11,7 +11,8 @@
 
   export let slug
 
-  $: ({ title, desc, code } = texFiles.find((itm) => itm.slug === slug) || {})
+  $: texFile = texFiles.find((itm) => itm.slug === slug) || {}
+  $: ({ title, desc, code, width, height } = texFile)
   $: link = `GitHub||https://github.com/janosh/tikz/blob/master/assets/${slug}/${slug}.tex`
 </script>
 
@@ -20,7 +21,7 @@
 {#if desc}
   <p>{@html desc}</p>
 {/if}
-<img src="assets/{slug}/{slug}-hd.png" alt={title} />
+<img src="assets/{slug}/{slug}-hd.png" alt={title} {width} {height} />
 
 <h2>Download</h2>
 <a href="assets/{slug}/{slug}.png" target="_blank">PNG</a>
@@ -54,6 +55,7 @@
     max-width: 40em;
     margin: auto;
     border-radius: 1ex;
+    height: auto;
   }
   a {
     background: rgba(255, 255, 255, 0.2);
