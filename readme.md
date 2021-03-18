@@ -26,9 +26,9 @@ Random collection of **104** [`standalone`](https://ctan.org/pkg/standalone) [Ti
 
 ## Images
 
-|                   [`detailed-balance.tex`](assets/detailed-balance)                    |                                            [`bloch.tex`](assets/bloch)                                            |
+|                   [`detailed-balance.tex`](assets/detailed-balance)                    |                                     [`bloch-sphere.tex`](assets/bloch-sphere)                                     |
 | :------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: |
-|           ![detailed-balance](assets/detailed-balance/detailed-balance.png)            |                                         ![bloch](assets/bloch/bloch.png)                                          |
+|           ![detailed-balance](assets/detailed-balance/detailed-balance.png)            |                               ![bloch-sphere](assets/bloch-sphere/bloch-sphere.png)                               |
 |                          [`boltzmann.tex`](assets/boltzmann)                           |                             [`bose-distribution-3d.tex`](assets/bose-distribution-3d)                             |
 |                      ![boltzmann](assets/boltzmann/boltzmann.png)                      |                   ![bose-distribution-3d](assets/bose-distribution-3d/bose-distribution-3d.png)                   |
 |                  [`bose-distribution.tex`](assets/bose-distribution)                   |                                 [`branch-and-bound.tex`](assets/branch-and-bound)                                 |
