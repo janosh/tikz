@@ -17,7 +17,7 @@
 
 </h3>
 
-Random collection of **104** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years.
+Random collection of **104** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years. Mostly about physics and machine learning.
 
 ## Table of Contents
 
