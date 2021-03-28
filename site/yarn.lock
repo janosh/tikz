@@ -46,49 +46,35 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@sveltejs/adapter-netlify@^1.0.0-next.2":
-  version "1.0.0-next.2"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.2.tgz#d48af43727c8b058c868103c82c46b94b45214d6"
-  integrity sha512-u69qaCeHj+FFxyNnoFr8YxTmHVgdiZNPuHJUuKO0hXGtXCw9IuTKh3oxY4t1DEyuRGLJahmXV9G+DkZgR1iK6g==
+"@sveltejs/adapter-netlify@^1.0.0-next.4":
+  version "1.0.0-next.4"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.4.tgz#2e735de864e58130cd9a3c5bf7b3ae2dc36e0608"
+  integrity sha512-kY3tRvnVR0MDOu+8UIgCRrJRkVj4/eQyqdcSm0K06NW8/1QIuVDYE+YZU1IZo4SDYRLeq+/md1UeaaqXBpx8NA==
   dependencies:
     toml "^3.0.0"
 
-"@sveltejs/kit@^1.0.0-next.45":
-  version "1.0.0-next.45"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.45.tgz#32b90f37ce4339b78cc564f34c8de285651292ef"
-  integrity sha512-GghGUxszjgMJMf3j3FifoUB62dLDFWmy6eL6LxDj1VvpcpIx2PnJLbRbbyzzWNEKS4N41b8pQIi4uF+HYSVQ/w==
+"@sveltejs/kit@^1.0.0-next.59":
+  version "1.0.0-next.59"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-1.0.0-next.59.tgz#3e832d58526b5f0f4e4d6dcaab61d1349f2f46b2"
+  integrity sha512-EHHVyJtOa/L2R00iCmA3tlDIKF7mqkVqZ/4SVXUkOIRC810Lj2PRZnGXwPnxdc8DY2Gwjq5j/coPrE8/GYyL9w==
   dependencies:
-    "@sveltejs/vite-plugin-svelte" "1.0.0-next.3"
-    "@svitejs/vite-plugin-svelte" "^0.10.0"
+    "@sveltejs/vite-plugin-svelte" "^1.0.0-next.5"
     cheap-watch "^1.0.3"
     sade "^1.7.4"
 
-"@sveltejs/vite-plugin-svelte@1.0.0-next.3":
-  version "1.0.0-next.3"
-  resolved "https://registry.yarnpkg.com/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-1.0.0-next.3.tgz#2d27647985802815d00341e8d513628055b21578"
-  integrity sha512-9zS62JMhwHZ0/ZHrKErNfLMupwLStrnPJU2Dc3zstE6xJGxVuz3xmeVRG90wrEx1QEnEEB98YSmR5au8VXd1hw==
+"@sveltejs/vite-plugin-svelte@^1.0.0-next.5":
+  version "1.0.0-next.5"
+  resolved "https://registry.yarnpkg.com/@sveltejs/vite-plugin-svelte/-/vite-plugin-svelte-1.0.0-next.5.tgz#8cf608f7a3c33dfa5b648397aae1ba90e6a4883f"
+  integrity sha512-RVjafsqziWwnQm8VEy2y0qNaugNDvRd8tTaCt9rjgQkqaS/BDiyDCluXxA28PRC+ddZjvwUeq9k+0EfbLVObfg==
   dependencies:
     "@rollup/pluginutils" "^4.1.0"
     chalk "^4.1.0"
+    debug "^4.3.2"
     hash-sum "^2.0.0"
     require-relative "^0.8.7"
     slash "^3.0.0"
     source-map "^0.7.3"
-    svelte-hmr "^0.12.9"
-
-"@svitejs/vite-plugin-svelte@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@svitejs/vite-plugin-svelte/-/vite-plugin-svelte-0.10.0.tgz#c4ccc09472c257aadfa11d58179256f36e1091ac"
-  integrity sha512-gttcMIZvLwanYbkfkl77o8mkPKxnYGoqz0xOfz4ZPrzJdan+DzH9b2PEQbpWb53klFKANB7FPBDr7bCaixIT5Q==
-  dependencies:
-    "@rollup/pluginutils" "^4.1.0"
-    chalk "^4.1.0"
-    debug "^4.3.1"
-    hash-sum "^2.0.0"
-    require-relative "^0.8.7"
-    slash "^3.0.0"
-    source-map "^0.7.3"
-    svelte-hmr "^0.13.0-2"
+    svelte-hmr "^0.13.3"
 
 acorn-jsx@^5.3.1:
   version "5.3.1"
@@ -239,10 +225,17 @@ cross-spawn@^7.0.2:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-debug@^4.0.1, debug@^4.1.1, debug@^4.3.1:
+debug@^4.0.1, debug@^4.1.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
   integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
+  dependencies:
+    ms "2.1.2"
+
+debug@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
+  integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
   dependencies:
     ms "2.1.2"
 
@@ -270,10 +263,10 @@ enquirer@^2.3.5:
   dependencies:
     ansi-colors "^4.1.1"
 
-esbuild@^0.8.52:
-  version "0.8.57"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.8.57.tgz#a42d02bc2b57c70bcd0ef897fe244766bb6dd926"
-  integrity sha512-j02SFrUwFTRUqiY0Kjplwjm1psuzO1d6AjaXKuOR9hrY0HuPsT6sV42B6myW34h1q4CRy+Y3g4RU/cGJeI/nNA==
+esbuild@^0.9.3:
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.9.7.tgz#ea0d639cbe4b88ec25fbed4d6ff00c8d788ef70b"
+  integrity sha512-VtUf6aQ89VTmMLKrWHYG50uByMF4JQlVysb8dmg6cOgW8JnFCipmz7p+HNBl+RR3LLCuBxFGVauAe2wfnF9bLg==
 
 escape-string-regexp@^1.0.5:
   version "1.0.5"
@@ -872,15 +865,10 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-hmr@^0.12.9:
-  version "0.12.9"
-  resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.12.9.tgz#e323b71062a59bf4b73d2d5a7cc80dba256217e1"
-  integrity sha512-SGE7Odznj4dqZtUVIWcoPCvZ9gHImxVIIjrz+O3DDSi0j4OaSLim6MRF4UdhlBKeW3glSRc+tXNSKYvM5x+Dyw==
-
-svelte-hmr@^0.13.0-2:
-  version "0.13.0-2"
-  resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.13.0-2.tgz#12a28df6754a22e8e40aec848a62c6388ae5920e"
-  integrity sha512-3Sqxbs5hG212oweKhHzh2S7jVScylzbVXuEkydgdS9NpvcdnyCSufpaJSUNxUGc02wgjWugtqaJXs1DybAjRpw==
+svelte-hmr@^0.13.3:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.13.3.tgz#fba5739b477ea44caf70e542a24a4352bee2b897"
+  integrity sha512-gagW62pLQ2lULmvNA3pIZu9pBCYOaGu3rQikUOv6Nokz5VxUgT9/mQLfMxj9phDEKHCg/lgr3i6PkqZDbO9P2Q==
 
 svelte@^3.35.0:
   version "3.35.0"
@@ -936,12 +924,12 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-vite@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.0.5.tgz#ac46857a3fa8686d077921e61bd48a986931df1d"
-  integrity sha512-QTgEDbq1WsTtr6j+++ewjhBFEk6c8v0xz4fb/OWJQKNYU8ZZtphOshwOqAlnarSstPBtWCBR0tsugXx6ajfoUg==
+vite@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.1.2.tgz#0aecaf6d34112b24536df1a14cd8d74fdcab6e20"
+  integrity sha512-K96k5Nb1kywggFwZNGf/NQVZIrjMSvjebYWFIEQRu8AQWtzxatMF8/reExFXebmrfWAT3PTUk6l4zJBkpMtyVg==
   dependencies:
-    esbuild "^0.8.52"
+    esbuild "^0.9.3"
     postcss "^8.2.1"
     resolve "^1.19.0"
     rollup "^2.38.5"

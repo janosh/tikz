@@ -1,7 +1,7 @@
 <script>
-  import Masonry from '$components/Masonry.svelte'
-  import Slider from '$components/Slider.svelte'
-  import Card from '$components/Card.svelte'
+  import Masonry from '../components/Masonry.svelte'
+  import Slider from '../components/Slider.svelte'
+  import Card from '../components/Card.svelte'
   import texFiles from './texFiles'
   import IntersectionObserver from '../components/IntersectionObserver.svelte'
 

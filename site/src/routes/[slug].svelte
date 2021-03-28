@@ -6,7 +6,7 @@
 </script>
 
 <script>
-  import Prism from '$components/Prism.svelte'
+  import Prism from '../components/Prism.svelte'
   import texFiles from './texFiles'
 
   export let slug
