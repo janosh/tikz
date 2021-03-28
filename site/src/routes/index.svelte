@@ -1,6 +1,5 @@
 <script>
   import Masonry from '../components/Masonry.svelte'
-  import Slider from '../components/Slider.svelte'
   import Card from '../components/Card.svelte'
   import texFiles from './texFiles'
   import IntersectionObserver from '../components/IntersectionObserver.svelte'
@@ -17,19 +16,9 @@
 
 <h1>Random Tikz Collection</h1>
 <p>
-  Experimental site using
-  <a href="https://svelte.dev"><code>svelte@next</code></a>
-  as demoed in
-  <a href="https://youtu.be/qSfdtmcZ4d0">Rich Harris: Futuristic Web Development</a>
-  . Source on
+  By <a href="https://janosh.dev">Janosh Riebesell</a>. Source code on
   <a href="https://github.com/janosh/tikz">GitHub</a>
 </p>
-
-<div class="controls">
-  <Slider label="minColWidth" bind:value={minColWidth} min="200" max={maxColWidth} />
-  <Slider label="maxColWidth" bind:value={maxColWidth} min={minColWidth} max="800" />
-  <Slider label="gap" bind:value={gap} min="1" max="50" />
-</div>
 
 <input name="Search" bind:value={query} placeholder="Search..." />
 
@@ -45,13 +34,6 @@
   p {
     font-size: 2.2ex;
   }
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3em auto;
-    gap: 1em;
-    place-content: center;
-  }
   input {
     margin-bottom: 2em;
     font-size: 2ex;
@@ -61,6 +43,7 @@
     border-radius: 1ex;
     color: inherit;
     background: black;
+    border: 1px dashed darkgrey;
   }
   input::placeholder {
     color: white;
