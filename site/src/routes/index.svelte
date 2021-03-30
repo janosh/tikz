@@ -16,8 +16,18 @@
 
 <h1>Random Tikz Collection</h1>
 <p>
-  By <a href="https://janosh.dev">Janosh Riebesell</a>. Source code on
-  <a href="https://github.com/janosh/tikz">GitHub</a>
+  Random collection of 104 standalone TikZ images, mostly about physics and machine
+  learning.
+</p>
+<p>
+  Site built with <a href="https://svelte.dev">Svelte</a>. By
+  <a href="https://janosh.dev">Janosh Riebesell</a>.
+</p>
+<p>
+  TikZ and Svelte code on
+  <a href="https://github.com/janosh/tikz">GitHub</a>.
+  <a href="https://github.com/janosh/tikz/blob/master/license">MIT licensed</a>. Feel free
+  to resuse, preferably with attribution.
 </p>
 
 <input name="Search" bind:value={query} placeholder="Search..." />
