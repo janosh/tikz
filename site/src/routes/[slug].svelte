@@ -45,6 +45,9 @@
     max-width: 42em;
     margin: 1em auto;
     padding: 1em;
+    line-height: 3ex;
+    text-align: justify;
+    word-break: break-all;
   }
   img {
     width: 100%;
