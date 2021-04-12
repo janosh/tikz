@@ -1,13 +1,12 @@
-\RequirePackage{luatex85}
 \documentclass{standalone}
 
-\usepackage[compat=1.1.0]{tikz-feynman}
+\usepackage{tikz-feynman}
 
 \begin{document}
 $\displaystyle\partial_t \frac{\partial V}{\partial \chi}
-  = \raisebox{0.5ex}{\feynmandiagram [horizontal=a to b, layered layout, inline=(a.base)] {
+  = \raisebox{0.5ex}{\feynmandiagram [inline=(a.base)] {
   i1 -- a [dot]
-  -- [charged boson,half left,edge label=\(q\)] b [crossed dot]
-  -- [charged boson,half left,edge label=\(q\)] a [desired at={(0, 0)}],
+  -- [charged boson, half left, edge label=$q$] b [crossed dot]
+  -- [charged boson, half left, edge label=$q$] a,
   };}$
 \end{document}

@@ -1,22 +1,21 @@
-\RequirePackage{luatex85}
 \documentclass{standalone}
 
-\usepackage[compat=1.1.0]{tikz-feynman}
+\usepackage{tikz-feynman}
 
 \begin{document}
 $\displaystyle\partial_t \frac{\partial^2 V}{\partial^2 \chi}
-  = \raisebox{0.5ex}{\feynmandiagram [horizontal=a to c,inline=(a.base)] {
-  a [dot] -- [charged boson,quarter left,edge label=\(q\)] b
-  -- [photon,quarter left] c [dot]
-  -- [charged boson,quarter left,edge label=\(q\)] d [crossed dot]
-  -- [charged boson,quarter left,edge label=\(q\)] a,
+  = \raisebox{0.5ex}{\feynmandiagram [inline=(a.base)] {
+  a [dot] -- [charged boson, quarter left, edge label=$q$] b
+  -- [photon, quarter left] c [dot]
+  -- [charged boson, quarter left, edge label=$q$] d [crossed dot]
+  -- [charged boson, quarter left, edge label=$q$] a,
   f1 -- c,
   i1 -- a,
   };}
   \enskip+\enskip
-  \raisebox{0.5ex}{\feynmandiagram [horizontal=a to b, layered layout, inline=(a.base)] {
-  {i1,i2} -- a [dot]
-  -- [charged boson,half left,edge label=\(q\)] b [crossed dot]
-  -- [charged boson,half left,edge label=\(q\)] a [desired at={(0, 0)}],
+  \raisebox{0.5ex}{\feynmandiagram [inline=(a.base)] {
+  {i1, i2} -- a [dot]
+  -- [charged boson, half left, edge label=$q$] b [crossed dot]
+  -- [charged boson, half left, edge label=$q$] a,
   };}$
 \end{document}

@@ -26,7 +26,7 @@
 <p>
   TikZ and Svelte code on
   <a href="https://github.com/janosh/tikz">GitHub</a>.
-  <a href="https://github.com/janosh/tikz/blob/master/license">MIT licensed</a>. Feel free
+  <a href="https://github.com/janosh/tikz/blob/main/license">MIT licensed</a>. Feel free
   to resuse, preferably with attribution.
 </p>
 

@@ -13,7 +13,7 @@
 
   $: texFile = texFiles.find((itm) => itm.slug === slug) || {}
   $: ({ title, desc, code, width, height } = texFile)
-  $: link = `GitHub||https://github.com/janosh/tikz/blob/master/assets/${slug}/${slug}.tex`
+  $: link = `GitHub||https://github.com/janosh/tikz/blob/main/assets/${slug}/${slug}.tex`
 </script>
 
 <a href="/#{slug}" class="back" sveltekit:prefetch>&laquo; back</a>
