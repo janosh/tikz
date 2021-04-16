@@ -21,7 +21,7 @@
     "dev": "svelte-kit dev",
     "prebuild": "yarn symlinkAssets && node src/parseTexFiles.js",
     "predev": "node src/parseTexFiles.js",
-    "serve": "svelte-kit build && svelte-kit start",
+    "serve": "yarn build && svelte-kit start",
     "start": "svelte-kit start",
     "symlinkAssets": "ln -sf $PWD/../assets $PWD/static"
   },

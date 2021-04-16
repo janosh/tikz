@@ -9,14 +9,17 @@ const slugs = fs
 
 const upperFirst = (str) => str[0].toUpperCase() + str.slice(1)
 const isProposition = (str) => [`and`, `to`, `vs`, `of`].includes(str)
-const slugToTitle = (slug) =>
-  slug
-    .split(`-`)
-    .map((str) => (isProposition(str) ? str : upperFirst(str)))
-    .join(` `)
+const isAbbr = (str) =>
+  [`qm`, `nn`, `phd`, `nf`, `made`, `maf`, `hea`, `vae`, `gan`].includes(str)
+const setCase = (str) => {
+  if (isProposition(str)) return str
+  if (isAbbr(str)) return str.toUpperCase()
+  return upperFirst(str)
+}
+const slugToTitle = (slug) => slug.split(`-`).map(setCase).join(` `)
 
 // https://stackoverflow.com/a/8943487
-const urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi
+const urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/gi
 
 const linkify = (text) =>
   text.replace(urlRegex, (url) => `<a href="` + url + `">` + url + `</a>`)
