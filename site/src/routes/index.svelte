@@ -16,18 +16,18 @@
 
 <h1>Random Tikz Collection</h1>
 <p>
-  Random collection of 104 standalone TikZ images, mostly about physics and machine
+  Random collection of {texFiles.length} standalone TikZ images, mostly about physics and machine
   learning.
 </p>
 <p>
-  Site built with <a href="https://svelte.dev">Svelte</a>. By
+  Built with <a href="https://svelte.dev">Svelte</a> by
   <a href="https://janosh.dev">Janosh Riebesell</a>.
 </p>
 <p>
   TikZ and Svelte code on
   <a href="https://github.com/janosh/tikz">GitHub</a>.
   <a href="https://github.com/janosh/tikz/blob/main/license">MIT licensed</a>. Feel free
-  to resuse, preferably with attribution.
+  to reuse.
 </p>
 
 <input name="Search" bind:value={query} placeholder="Search..." />
