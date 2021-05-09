@@ -2,9 +2,8 @@
 node_modules
 
 # production build
-.svelte
+.svelte-kit
 build
-functions
 src/routes/slugs.js
 src/routes/texFiles.js
 

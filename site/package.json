@@ -2,16 +2,15 @@
   "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
   "description": "svelte-kit site displaying TikZ images along with LaTeX source code",
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "^1.0.0-next.10",
-    "@sveltejs/adapter-static": "^1.0.0-next.7",
-    "@sveltejs/kit": "^1.0.0-next.95",
-    "eslint": "^7.25.0",
+    "@sveltejs/adapter-static": "^1.0.0-next.9",
+    "@sveltejs/kit": "^1.0.0-next.103",
+    "eslint": "^7.26.0",
     "eslint-plugin-svelte3": "^3.2.0",
     "image-size": "^1.0.0",
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
     "svelte": "^3.38.2",
-    "vite": "^2.2.3"
+    "vite": "^2.2.4"
   },
   "homepage": "https://github.com/janosh/tikz#readme",
   "license": "MIT",
