@@ -24,11 +24,11 @@
 
     \def\nB#1{1/(e^(x/#1) - 1) + 1/2}
 
-    \addplot[name path=T1, color=red]{\nB{0.5}};
+    \addplot[name path=T1, color=red] {\nB{0.5}};
 
-    \addplot[name path=T2, color=yellow]{\nB{1}};
+    \addplot[name path=T2, color=yellow] {\nB{1}};
 
-    \addplot[name path=T3, color=blue]{\nB{2}};
+    \addplot[name path=T3, color=blue] {\nB{2}};
 
     \addplot[draw=none, name path=aux] {3*x};
 

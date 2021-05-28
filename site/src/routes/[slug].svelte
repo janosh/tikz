@@ -1,19 +1,21 @@
 <script context="module">
+  import texFiles from './texFiles'
+
   export function load({ page }) {
     const { slug } = page.params
-    return { props: { slug } }
+    const texFile = texFiles.find((itm) => itm.slug === slug) || {}
+
+    return { props: { texFile } }
   }
 </script>
 
 <script>
   import Prism from '../components/Prism.svelte'
-  import texFiles from './texFiles'
 
-  export let slug
+  export let texFile
 
-  $: texFile = texFiles.find((itm) => itm.slug === slug) || {}
-  $: ({ title, desc, code, width, height } = texFile)
-  $: link = `GitHub||https://github.com/janosh/tikz/blob/main/assets/${slug}/${slug}.tex`
+  const { title, desc, code, width, height, slug } = texFile
+  const link = `GitHub||https://github.com/janosh/tikz/blob/main/assets/${slug}/${slug}.tex`
 </script>
 
 <a href="/#{slug}" class="back" sveltekit:prefetch>&laquo; back</a>
