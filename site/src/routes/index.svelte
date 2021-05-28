@@ -2,6 +2,7 @@
   import Masonry from '../components/Masonry.svelte'
   import Card from '../components/Card.svelte'
   import texFiles from './texFiles'
+  import slugs from './slugs'
   import IntersectionObserver from '../components/IntersectionObserver.svelte'
 
   let [minColWidth, maxColWidth] = [330, 500]
@@ -13,6 +14,14 @@
   $: filtered = texFiles.filter((itm) => !query || itm.slug.includes(query))
   $: visible = filtered.slice(0, nVisible)
 </script>
+
+<!-- placed here so sapper crawls all pages and posts (won't be needed with svelte-kit) -->
+<!-- https://stackoverflow.com/a/63388587 -->
+<ul style="visibility: hidden; position: absolute; max-width: 50vw; overflow: hidden;">
+  {#each slugs as slug}
+    <a href={slug}>{slug}</a>
+  {/each}
+</ul>
 
 <h1>Random Tikz Collection</h1>
 <p>

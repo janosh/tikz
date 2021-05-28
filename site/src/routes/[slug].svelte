@@ -1,6 +1,8 @@
 <script context="module">
   import texFiles from './texFiles'
 
+  export const ssr = false
+
   export function load({ page }) {
     const { slug } = page.params
     const texFile = texFiles.find((itm) => itm.slug === slug) || {}
@@ -14,8 +16,15 @@
 
   export let texFile
 
-  const { title, desc, code, width, height, slug } = texFile
+  const { title, desc, code, width, height, slug, downloads } = texFile
   const link = `GitHub||https://github.com/janosh/tikz/blob/main/assets/${slug}/${slug}.tex`
+  const labels = [
+    [`.png`, `PNG`],
+    [`-hd.png`, `PNG (HD)`],
+    [`.pdf`, `PDF`],
+    [`.svg`, `SVG`],
+    [`.tex`, `TeX`],
+  ]
 </script>
 
 <a href="/#{slug}" class="back" sveltekit:prefetch>&laquo; back</a>
@@ -26,11 +35,14 @@
 <img src="assets/{slug}/{slug}-hd.png" alt={title} {width} {height} />
 
 <h2>Download</h2>
-<a href="assets/{slug}/{slug}.png" target="_blank">PNG</a>
-<a href="assets/{slug}/{slug}-hd.png" target="_blank">PNG (HD)</a>
-<a href="assets/{slug}/{slug}.pdf" target="_blank">PDF</a>
-<a href="assets/{slug}/{slug}.svg" target="_blank">SVG</a>
-<a href="assets/{slug}/{slug}.tex" target="_blank">TeX</a>
+
+{#each labels as [ext, label]}
+  {#if downloads.some((filename) => filename.includes(ext))}
+    <a href="assets/{slug}/{slug}{ext}" target="_blank">
+      {label}
+    </a>
+  {/if}
+{/each}
 
 <h2>Code</h2>
 <Prism {code} title="{slug}.tex" {link} />
@@ -66,6 +78,7 @@
     background: rgba(255, 255, 255, 0.2);
     padding: 4pt 1ex;
     border-radius: 4pt;
+    margin: 2pt;
   }
   a:hover {
     background: rgba(255, 255, 255, 0.4);
