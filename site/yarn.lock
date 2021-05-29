@@ -75,6 +75,16 @@
     source-map "^0.7.3"
     svelte-hmr "^0.14.2"
 
+"@svicons/fa-regular@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@svicons/fa-regular/-/fa-regular-0.1.3.tgz#ec4f80225ed58b4e7666f82a447642d9336bff57"
+  integrity sha512-4IOfVXFcOq/FnzCgKPg+FP50bHIv1wHbHyp64McpRoIgQbf7Dgv73daIR5cNMRCcwO6QGIShfQeNlEafYqFelQ==
+
+"@svicons/octicons@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@svicons/octicons/-/octicons-0.1.3.tgz#e4eba607ea349472b18c9e9396ef38c0c50935fc"
+  integrity sha512-y7HA8RF6FgBsXUJGp4VfCFgGZTq9xoIkKVeSEOjoCoQ0Y/cLV+x5ftgFavaBhvayu6z2xyn0qb4kh13BccV2iw==
+
 acorn-jsx@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.1.tgz#fc8661e11b7ac1539c47dbfea2e72b3af34d267b"

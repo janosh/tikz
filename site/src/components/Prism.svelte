@@ -1,4 +1,6 @@
 <script>
+  import MarkGithub from '@svicons/octicons/mark-github.svelte'
+
   import CopyButton from './CopyButton.svelte'
   import { onMount, afterUpdate } from 'svelte'
 
@@ -24,7 +26,12 @@
     <h3>{title}</h3>
   {/if}
   <section>
-    {#if link}<a href={url}><button>{linkTitle}</button></a>{/if}
+    {#if link}<a href={url}>
+        <button>
+          <MarkGithub height="14pt" style="vertical-align: -4px;" />
+          {linkTitle}
+        </button>
+      </a>{/if}
     <CopyButton content={code} />
   </section>
   <pre><code class="language-latex">{code}</code></pre>

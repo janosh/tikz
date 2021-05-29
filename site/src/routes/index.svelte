@@ -1,5 +1,9 @@
 <script>
+  import Law from '@svicons/octicons/law.svelte'
+  import MarkGithub from '@svicons/octicons/mark-github.svelte'
+
   import Masonry from '../components/Masonry.svelte'
+  import GitHubCorner from '../components/GitHubCorner.svelte'
   import Card from '../components/Card.svelte'
   import texFiles from './texFiles'
   import slugs from './slugs'
@@ -23,6 +27,11 @@
   {/each}
 </ul>
 
+<GitHubCorner
+  href="https://github.com/janosh/tikz"
+  --ghc-bg="white"
+  --ghc-color="var(--body-bg)" />
+
 <h1>Random Tikz Collection</h1>
 <p>
   Random collection of {texFiles.length} standalone TikZ images, mostly about physics and machine
@@ -33,8 +42,10 @@
   <a href="https://janosh.dev">Janosh Riebesell</a>.
 </p>
 <p>
-  TikZ and Svelte code on
-  <a href="https://github.com/janosh/tikz">GitHub</a>.
+  <MarkGithub height="16pt" style="vertical-align: -2pt;" />&nbsp; TikZ and Svelte code on
+  <a href="https://github.com/janosh/tikz">GitHub</a>. &ensp;
+
+  <Law height="16pt" style="vertical-align: -4pt;" />&nbsp;
   <a href="https://github.com/janosh/tikz/blob/main/license">MIT licensed</a>. Feel free
   to reuse.
 </p>

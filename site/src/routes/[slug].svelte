@@ -1,4 +1,8 @@
 <script context="module">
+  import LawIcon from '@svicons/octicons/law.svelte'
+  import CodeIcon from '@svicons/octicons/code.svelte'
+  import DownloadIcon from '@svicons/octicons/download.svelte'
+
   import texFiles from './texFiles'
 
   export const ssr = false
@@ -27,14 +31,14 @@
   ]
 </script>
 
-<a href="/#{slug}" class="back" sveltekit:prefetch>&laquo; back</a>
+<a href="/" class="back" sveltekit:prefetch>&laquo; back</a>
 <h1>{title}</h1>
 {#if desc}
   <p>{@html desc}</p>
 {/if}
 <img src="assets/{slug}/{slug}-hd.png" alt={title} {width} {height} />
 
-<h2>Download</h2>
+<h2><DownloadIcon height="1em" style="vertical-align: middle;" />&nbsp; Download</h2>
 
 {#each labels as [ext, label]}
   {#if downloads.some((filename) => filename.includes(ext))}
@@ -44,8 +48,14 @@
   {/if}
 {/each}
 
-<h2>Code</h2>
+<h2><CodeIcon height="1em" style="vertical-align: middle;" />&nbsp; Code</h2>
+
 <Prism {code} title="{slug}.tex" {link} />
+
+<small>
+  <LawIcon height="14pt" style="vertical-align: middle;" /> MIT License - Janosh Riebesell
+  2021
+</small>
 
 <style>
   h1,
@@ -62,6 +72,9 @@
     line-height: 3ex;
     text-align: justify;
     word-break: break-all;
+  }
+  small {
+    text-align: center;
   }
   img {
     width: 100%;

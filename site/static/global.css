@@ -1,7 +1,10 @@
+:root {
+  --body-bg: #090019;
+}
 body {
-  background: #090019;
+  background: var(--body-bg);
   padding: 2vw;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   color: white;
   text-align: center;
 }
@@ -21,6 +24,7 @@ button {
   border-radius: 1ex;
   transition: 0.2s;
   color: white;
+  cursor: pointer;
 }
 button:hover {
   background: teal;

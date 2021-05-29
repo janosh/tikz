@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://svelte-tikz.netlify.app">
+  <a href="https://tikz.netlify.app">
     <img src="site/static/favicon.svg" alt="TikZ" height=150>
   </a>
 </p>
@@ -9,7 +9,7 @@
 <h3 align="center">
 
 [![Made with LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a0303431-0e3a-44f8-af97-1071ec922f53/deploy-status)](https://app.netlify.com/sites/svelte-tikz/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0303431-0e3a-44f8-af97-1071ec922f53/deploy-status)](https://app.netlify.com/sites/tikz/deploys)
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/janosh/tikz?label=Repo+Size)
 
 </h3>

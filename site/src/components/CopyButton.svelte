@@ -1,20 +1,25 @@
 <script>
+  import MarkGithub from '@svicons/fa-regular/copy.svelte'
+
   export let content
 
-  let btn
+  let span
 
   function copy() {
     navigator.clipboard.writeText(content).then(
       () => {
-        btn.innerText = `Copied!`
-        setTimeout(() => (btn.innerText = `Copy`), 2000)
+        span.innerText = `Copied!`
+        setTimeout(() => (span.innerText = `Copy`), 2000)
       },
       (err) => {
         console.error(err)
-        btn.innerText = `Error`
+        span.innerText = `Error`
       }
     )
   }
 </script>
 
-<button on:click={copy} bind:this={btn}>Copy</button>
+<button on:click={copy}>
+  <MarkGithub height="14pt" style="vertical-align: -4px;" />
+  <span bind:this={span}>Copy</span>
+</button>
