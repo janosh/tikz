@@ -1,18 +1,18 @@
 {
   "author": "Janosh Riebesell <janosh.riebesell@gmail.com>",
-  "description": "svelte-kit site displaying TikZ images along with LaTeX source code",
+  "description": "SvelteKit site displaying standalone TikZ images along with their LaTeX source code",
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.11",
-    "@sveltejs/kit": "^1.0.0-next.109",
+    "@sveltejs/adapter-static": "^1.0.0-next.13",
+    "@sveltejs/kit": "^1.0.0-next.115",
     "@svicons/fa-regular": "^0.1.3",
     "@svicons/octicons": "^0.1.3",
-    "eslint": "^7.27.0",
+    "eslint": "^7.28.0",
     "eslint-plugin-svelte3": "^3.2.0",
     "image-size": "^1.0.0",
-    "prettier": "^2.3.0",
+    "prettier": "^2.3.1",
     "prettier-plugin-svelte": "^2.3.0",
     "svelte": "^3.38.2",
-    "vite": "^2.3.4"
+    "vite": "^2.3.7"
   },
   "homepage": "https://github.com/janosh/tikz#readme",
   "license": "MIT",

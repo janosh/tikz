@@ -2,13 +2,13 @@
   <img src="static/favicon.svg" alt="TikZ" height=150>
 </p>
 
-# Svelte TikZ
+# Random TikZ Collection
 
-Gallery site using `svelte-kit` as demoed in [Rich Harris: Futuristic Web Development](https://youtu.be/qSfdtmcZ4d0).
+Gallery site of standalone TikZ images along with their source code. Built with [SvelteKit](https://kit.svelte.dev).
 
-## Get started
+## Running this site locally
 
-1. Clone and install dependencies:
+1. Clone this repo and install dependencies:
 
    ```sh
    git clone https://github.com/janosh/tikz
@@ -22,26 +22,15 @@ Gallery site using `svelte-kit` as demoed in [Rich Harris: Futuristic Web Develo
    yarn dev
    ```
 
-Navigate to <http://localhost:3000>. You should see this app running. Edit a component file in `src`, save it and the page should hot-reload to display your changes.
+Navigate to <http://localhost:3000>. You should see this app running. Edit a component file in `src`, save it and the page will hot-reload to display your changes.
 
 ## Building and running in production mode
 
 To build and serve an optimized version of the app, run
 
 ```sh
-yarn build && yarn start
+yarn build && yarn preview
 ```
-
-## Building
-
-Svelte apps are built with _adapters_, which optimise your project for deployment to different environments, like [Begin](https://begin.com), [Netlify](https://netlify.com), [Vercel](https://vercel.com) and so on. (You can also create your own adapter — instructions TODO.)
-
-By default, `yarn build` will generate a Node app that you can run with `node build`. To use a different adapter, install it and update your `svelte.config.js` accordingly. The following official adapters are available:
-
-- [@sveltejs/adapter-node](https://github.com/sveltejs/kit/tree/master/packages/adapter-node)
-- [@sveltejs/adapter-static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static)
-- [@sveltejs/adapter-netlify](https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify)
-- ...more soon
 
 ## Deploying to Netlify
 

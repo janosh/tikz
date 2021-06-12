@@ -19,7 +19,7 @@
   $: visible = filtered.slice(0, nVisible)
 </script>
 
-<!-- placed here so sapper crawls all pages and posts (won't be needed with svelte-kit) -->
+<!-- placed here so SvelteKit crawls all pages -->
 <!-- https://stackoverflow.com/a/63388587 -->
 <ul style="visibility: hidden; position: absolute; max-width: 50vw; overflow: hidden;">
   {#each slugs as slug}
@@ -34,8 +34,7 @@
 
 <h1>Random Tikz Collection</h1>
 <p>
-  Random collection of {texFiles.length} standalone TikZ images, mostly about physics and machine
-  learning.
+  {texFiles.length} standalone TikZ images, mostly about physics and machine learning.
 </p>
 <p>
   Built with <a href="https://svelte.dev">Svelte</a> by
