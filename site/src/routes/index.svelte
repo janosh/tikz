@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Law from '@svicons/octicons/law.svelte'
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
 
@@ -11,7 +11,7 @@
 
   let [minColWidth, maxColWidth] = [330, 500]
   let gap = 20
-  let query
+  let query: string
   let nVisible = 24
   const onIntersect = () => (nVisible += 12)
 

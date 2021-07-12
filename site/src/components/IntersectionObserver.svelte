@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   // https://github.com/sveltejs/svelte/blob/master/site/src/components/IntersectionObserver.svelte
   import { onMount, createEventDispatcher } from 'svelte'
 
@@ -9,7 +9,7 @@
   export let left = 0
   export let right = 0
 
-  let div
+  let div: HTMLDivElement
 
   const dispatch = createEventDispatcher()
 

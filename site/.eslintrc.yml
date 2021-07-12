@@ -1,16 +1,21 @@
+root: true
 env:
   browser: true
   es2020: true
   node: true
-extends:
-  - eslint:recommended
+parser: '@typescript-eslint/parser'
 parserOptions:
   sourceType: module
   ecmaVersion: 2020
-plugins: [svelte3]
+plugins: [svelte3, '@typescript-eslint']
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
 overrides:
   - files: ['*.svelte']
     processor: svelte3/svelte3
+settings:
+  svelte3/typescript: true
 rules:
   indent: [error, 2, SwitchCase: 1]
   quotes: [error, backtick, avoidEscape: true]
@@ -18,4 +23,6 @@ rules:
   linebreak-style: [error, unix]
   no-console: [error, allow: [warn, error]]
   no-var: error
-  spaced-comment: [error, always]
+  # markers: [/] allows triple slash for typescript file
+  # referencing https://git.io/JCeqO (e.g. in src/global.d.ts)
+  spaced-comment: [error, always, {markers: [/]}]

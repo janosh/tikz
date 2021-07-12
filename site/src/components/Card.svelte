@@ -1,7 +1,9 @@
-<script>
-  export let item
+<script lang="ts">
+  import type { TexFile } from '../types'
 
-  const { slug, title, desc, width, height } = item
+  export let item: TexFile
+
+  $: ({ slug, title, desc, width, height } = item)
 </script>
 
 <a href={slug} sveltekit:prefetch>

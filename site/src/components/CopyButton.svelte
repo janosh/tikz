@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import CopyIcon from '@svicons/fa-regular/copy.svelte'
 
-  export let content
+  export let content: string
 
-  let span
+  let span: HTMLSpanElement
 
   async function copy() {
     try {

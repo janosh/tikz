@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   // adapted from https://github.com/tholman/github-corners
-  export let href
+  export let href: string
   export let ariaLabel = `View source on GitHub`
 </script>
 

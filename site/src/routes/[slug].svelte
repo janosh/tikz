@@ -1,4 +1,4 @@
-<script context="module">
+<script lang="ts" context="module">
   import LawIcon from '@svicons/octicons/law.svelte'
   import CodeIcon from '@svicons/octicons/code.svelte'
   import DownloadIcon from '@svicons/octicons/download.svelte'
@@ -7,21 +7,26 @@
 
   export const ssr = false
 
-  export function load({ page }) {
+  export function load({ page }: LoadInput): { props: { texFile: TexFile } } | void {
     const { slug } = page.params
-    const texFile = texFiles.find((itm) => itm.slug === slug) || {}
+
+    const texFile = texFiles.find((itm) => itm.slug === slug)
+
+    if (!texFile) return
 
     return { props: { texFile } }
   }
 </script>
 
-<script>
+<script lang="ts">
   import Prism from '../components/Prism.svelte'
+  import type { LoadInput } from '@sveltejs/kit'
+  import type { TexFile } from '../types'
 
-  export let texFile
+  export let texFile: TexFile
 
-  const { title, desc, code, width, height, slug, downloads } = texFile
-  const link = `GitHub||https://github.com/janosh/tikz/blob/main/assets/${slug}/${slug}.tex`
+  $: ({ title, desc, code, width, height, slug, downloads } = texFile)
+  $: link = `GitHub||https://github.com/janosh/tikz/blob/main/assets/${slug}/${slug}.tex`
   const labels = [
     [`.png`, `PNG`],
     [`-hd.png`, `PNG (HD)`],

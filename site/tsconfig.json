@@ -1,0 +1,10 @@
+// https://github.com/sveltejs/language-tools/blob/master/docs/preprocessors/typescript.md
+{
+  // https://npmjs.com/package/@tsconfig/svelte
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "module": "es2020",
+    "target": "es2020"
+  }
+}

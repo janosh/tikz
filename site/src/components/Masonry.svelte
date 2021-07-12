@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import { crossfade } from 'svelte/transition'
   import { flip } from 'svelte/animate'
 
-  export let items = []
+  export let items: unknown[] = []
   export let minColWidth = 330
   export let maxColWidth = 500
   export let gap = 20
@@ -29,16 +29,16 @@
 
   $: nCols = Math.min(items.length, Math.floor(width / (minColWidth + gap)) || 1)
   $: itemsToCols = items.reduce(
-    (cols, item, idx) => {
+    (cols: [unknown, number][][], item, idx) => {
       cols[idx % cols.length].push([item, idx])
       return cols
     },
     Array(nCols)
-      .fill()
+      .fill(null)
       .map(() => [])
   )
-  function getId(item) {
-    if (typeof item === `object`) return item[id]
+  function getId(item: unknown) {
+    if (item && typeof item === `object` && id in item) return item[id]
     if ([`string`, `number`].includes(typeof item)) return item
   }
 </script>
@@ -53,8 +53,8 @@
       {#if animate}
         {#each col as [item, idx] (getId(item) ?? idx)}
           <div
-            in:receive={{ key: item[id] ?? idx }}
-            out:send={{ key: item[id] ?? idx }}
+            in:receive={{ key: getId(item) ?? idx }}
+            out:send={{ key: getId(item) ?? idx }}
             animate:flip={{ duration: 200 }}>
             <slot {idx} {item} />
           </div>
