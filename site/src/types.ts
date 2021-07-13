@@ -1,4 +1,4 @@
-export interface TexFile {
+export type TexFile = {
   title: string
   desc: string
   code: string

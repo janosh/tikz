@@ -5,22 +5,20 @@
 
   import texFiles from './texFiles'
 
-  export const ssr = false
-
-  export function load({ page }: LoadInput): { props: { texFile: TexFile } } | void {
+  // type union LoadOutput | undefined only temporary https://git.io/JCta2
+  export function load({ page }: LoadInput): LoadOutput | undefined {
     const { slug } = page.params
 
     const texFile = texFiles.find((itm) => itm.slug === slug)
 
-    if (!texFile) return
-
-    return { props: { texFile } }
+    // return nothin if texFile was not found to fall through to __error.svelte
+    if (texFile) return { props: { texFile } }
   }
 </script>
 
 <script lang="ts">
   import Prism from '../components/Prism.svelte'
-  import type { LoadInput } from '@sveltejs/kit'
+  import type { LoadInput, LoadOutput } from '@sveltejs/kit'
   import type { TexFile } from '../types'
 
   export let texFile: TexFile

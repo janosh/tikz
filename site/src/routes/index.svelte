@@ -1,8 +1,8 @@
 <script lang="ts">
   import Law from '@svicons/octicons/law.svelte'
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
+  import Masonry from 'svelte-bricks'
 
-  import Masonry from '../components/Masonry.svelte'
   import GitHubCorner from '../components/GitHubCorner.svelte'
   import Card from '../components/Card.svelte'
   import texFiles from './texFiles'
@@ -15,7 +15,7 @@
   let nVisible = 24
   const onIntersect = () => (nVisible += 12)
 
-  $: filtered = texFiles.filter((itm) => !query || itm.slug.includes(query))
+  $: filtered = texFiles.filter((itm) => !query || itm.slug.includes(query.toLowerCase()))
   $: visible = filtered.slice(0, nVisible)
 </script>
 
@@ -27,10 +27,7 @@
   {/each}
 </ul>
 
-<GitHubCorner
-  href="https://github.com/janosh/tikz"
-  --ghc-bg="white"
-  --ghc-color="var(--body-bg)" />
+<GitHubCorner href="https://github.com/janosh/tikz" />
 
 <h1>Random Tikz Collection</h1>
 <p>
@@ -76,5 +73,9 @@
   }
   input::placeholder {
     color: white;
+  }
+  :global(:root) {
+    --ghc-bg: white;
+    --ghc-color: var(--body-bg);
   }
 </style>

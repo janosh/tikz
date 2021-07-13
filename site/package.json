@@ -15,6 +15,7 @@
     "prettier": "^2.3.2",
     "prettier-plugin-svelte": "^2.3.1",
     "svelte": "^3.38.3",
+    "svelte-bricks": "^0.1.0",
     "svelte-check": "^2.2.2",
     "svelte-preprocess": "^4.7.4",
     "svelte2tsx": "^0.4.1",
