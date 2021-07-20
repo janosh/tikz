@@ -22,7 +22,7 @@ Gallery site of standalone TikZ images along with their source code. Built with 
    yarn dev
    ```
 
-Navigate to <http://localhost:3000>. You should see this app running. Edit a component file in `src`, save it and the page will hot-reload to display your changes.
+Navigate to `http://localhost:3000`. You should see this app running. Edit a component file in `src`, save it and the page will hot-reload to display your changes.
 
 ## Building and running in production mode
 
