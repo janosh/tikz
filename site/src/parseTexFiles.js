@@ -48,6 +48,7 @@ const parsedFiles = slugs.map((slug) => {
 
   // construct TeX file attributes
   return {
+    id: slug,
     title: slugToTitle(slug),
     slug,
     width,
@@ -61,10 +62,8 @@ const parsedFiles = slugs.map((slug) => {
 })
 
 fs.writeFileSync(
-  `src/routes/slugs.js`,
-  `export default ` + JSON.stringify(slugs)
+  `src/slugs.ts`, `export default ` + JSON.stringify(slugs, null, 2)
 )
 fs.writeFileSync(
-  `src/routes/texFiles.js`,
-  `export default ` + JSON.stringify(parsedFiles)
+  `src/texFiles.ts`, `export default ` + JSON.stringify(parsedFiles, null, 2)
 )

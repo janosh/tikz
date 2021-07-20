@@ -4,8 +4,8 @@ node_modules
 # production build
 .svelte-kit
 build
-src/routes/slugs.js
-src/routes/texFiles.js
+src/slugs.ts
+src/texFiles.ts
 
 # deploy config
 .netlify

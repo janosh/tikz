@@ -5,8 +5,8 @@
 
   import GitHubCorner from '../components/GitHubCorner.svelte'
   import Card from '../components/Card.svelte'
-  import texFiles from './texFiles'
-  import slugs from './slugs'
+  import texFiles from '../texFiles'
+  import slugs from '../slugs'
   import IntersectionObserver from '../components/IntersectionObserver.svelte'
 
   let [minColWidth, maxColWidth] = [330, 500]
@@ -48,7 +48,7 @@
 
 <input name="Search" bind:value={query} placeholder="Search..." />
 
-<Masonry items={visible} {minColWidth} {maxColWidth} {gap} let:item id="slug">
+<Masonry items={visible} {minColWidth} {maxColWidth} {gap} let:item>
   <Card {item} />
 </Masonry>
 <IntersectionObserver on:intersect={onIntersect} top={400} />

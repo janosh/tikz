@@ -1,9 +1,10 @@
-export type TexFile = {
+export declare type TexFile = {
+  id: string
   title: string
-  desc: string
-  code: string
+  slug: string
   width: number
   height: number
-  slug: string
   downloads: string[]
+  desc: string
+  code: string
 }

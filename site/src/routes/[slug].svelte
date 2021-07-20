@@ -3,16 +3,16 @@
   import CodeIcon from '@svicons/octicons/code.svelte'
   import DownloadIcon from '@svicons/octicons/download.svelte'
 
-  import texFiles from './texFiles'
+  type LoadPromise = Promise<LoadOutput | undefined>
 
   // type union LoadOutput | undefined only temporary https://git.io/JCta2
-  export function load({ page }: LoadInput): LoadOutput | undefined {
+  export async function load({ page, fetch }: LoadInput): LoadPromise {
     const { slug } = page.params
 
-    const texFile = texFiles.find((itm) => itm.slug === slug)
+    const response = await fetch(`/${slug}.json`)
 
     // return nothin if texFile was not found to fall through to __error.svelte
-    if (texFile) return { props: { texFile } }
+    if (response.ok) return { props: { texFile: await response.json() } }
   }
 </script>
 
@@ -39,13 +39,13 @@
 {#if desc}
   <p>{@html desc}</p>
 {/if}
-<img src="assets/{slug}/{slug}-hd.png" alt={title} {width} {height} />
+<img src="/assets/{slug}/{slug}-hd.png" alt={title} {width} {height} />
 
 <h2><DownloadIcon height="1em" style="vertical-align: middle;" />&nbsp; Download</h2>
 
 {#each labels as [ext, label]}
-  {#if downloads.some((filename) => filename.includes(ext))}
-    <a href="assets/{slug}/{slug}{ext}" target="_blank">
+  {#if downloads?.some((filename) => filename.includes(ext))}
+    <a href="/assets/{slug}/{slug}{ext}" target="_blank">
       {label}
     </a>
   {/if}
