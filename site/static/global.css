@@ -22,7 +22,7 @@ button {
   outline: none;
   padding: 3pt 1ex;
   border-radius: 1ex;
-  transition: 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
   color: white;
   cursor: pointer;
 }

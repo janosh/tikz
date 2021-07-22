@@ -31,7 +31,7 @@
     [`.pdf`, `PDF`],
     [`.svg`, `SVG`],
     [`.tex`, `TeX`],
-  ]
+  ] as const
 </script>
 
 <a href="/" class="back" sveltekit:prefetch>&laquo; back</a>
@@ -95,6 +95,7 @@
     padding: 4pt 1ex;
     border-radius: 4pt;
     margin: 2pt;
+    transition: color 0.3s, background-color 0.3s;
   }
   a:hover {
     background: rgba(255, 255, 255, 0.4);

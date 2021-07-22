@@ -19,11 +19,10 @@
     display: grid;
     place-content: center;
     border-radius: 1ex;
-    transition: 0.5s;
     cursor: pointer;
     transform-style: preserve-3d;
     background: #595975;
-    transition: 0.5s;
+    transition: transform 0.5s;
   }
   a:hover {
     transform: scale(1.02);
@@ -50,7 +49,7 @@
     color: white;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: opacity 0.5s;
     overflow-wrap: break-word;
     max-width: 100%;
     box-sizing: border-box;
