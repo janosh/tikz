@@ -1,0 +1,14 @@
+# Install these hooks with `pre-commit install`.
+# Setup CI at https://pre-commit.ci.
+
+ci:
+  autoupdate_schedule: quarterly
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: end-of-file-fixer
+        exclude: ^assets/.+\.svg$
+      - id: check-yaml
+      - id: trailing-whitespace

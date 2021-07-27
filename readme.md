@@ -11,6 +11,7 @@
 [![Made with LaTeX](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://latex-project.org)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a0303431-0e3a-44f8-af97-1071ec922f53/deploy-status)](https://app.netlify.com/sites/tikz/deploys)
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/janosh/tikz?label=Repo+Size)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/janosh/tikz/main.svg)](https://results.pre-commit.ci/latest/github/janosh/tikz/main)
 
 </h3>
 
