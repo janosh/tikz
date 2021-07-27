@@ -14,7 +14,7 @@
 
 </h3>
 
-Random collection of **104** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years. Mostly about physics and machine learning.
+Random collection of **105** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years. Mostly about physics and machine learning.
 
 ## Table of Contents
 
@@ -126,6 +126,8 @@ Random collection of **104** [`standalone`](https://ctan.org/pkg/standalone) [Ti
 |          ![harm-osc-energy-freq](assets/harm-osc-energy-freq/harm-osc-energy-freq.png)          |              ![harm-osc-energy-inv-temp](assets/harm-osc-energy-inv-temp/harm-osc-energy-inv-temp.png)               |
 |                         [`wyckoff-positions`](assets/wyckoff-positions)                         |                                            [`aviary.tex`](assets/aviary)                                             |
 |              ![wyckoff-positions](assets/wyckoff-positions/wyckoff-positions.png)               |                                         ![aviary](assets/aviary/aviary.png)                                          |
+|                         [`graph-isomorphism`](assets/graph-isomorphism)                         |                                                                                                                      |
+|              ![graph-isomorphism](assets/graph-isomorphism/graph-isomorphism.png)               |                                                                                                                      |
 
 ## Scripts
 
