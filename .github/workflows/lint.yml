@@ -11,4 +11,4 @@ jobs:
 
       - name: Run markdown link check
         uses: gaurav-nelson/github-action-markdown-link-check@v1
-        # docs at https://github.com/gaurav-nelson/github-action-markdown-link-check#custom-variables
+        # docs at https://git.io/JBaKu
