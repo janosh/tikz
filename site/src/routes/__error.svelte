@@ -20,13 +20,16 @@
 </svelte:head>
 
 <div>
-  <h1>{error.name} {status}</h1>
-
   {#if status === 404}
+    <h1>{error.name} {status}: Page not found 😅</h1>
     <p>
-      😅 Page not found. Back to
-      <a sveltekit:prefetch href="/">index page</a>. 🤦
+      Either it doesn't exist or something is wrong with the server. This site is hosted
+      on Netlify. You can check <a href="https://netlifystatus.com"> their status page</a>
+      or return to the
+      <a sveltekit:prefetch href="/">index page</a>.
     </p>
+  {:else}
+    <h1>⚠️ {error.name} {status}</h1>
   {/if}
 
   {#if dev && error?.stack}
@@ -44,6 +47,8 @@
   }
   p {
     text-align: center;
+    max-width: 35em;
+    margin: auto;
   }
   pre {
     overflow: scroll;

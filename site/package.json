@@ -15,26 +15,26 @@
     "prebuild": "yarn symlinkAssets && yarn predev",
     "predev": "node src/parseTexFiles.js",
     "symlinkAssets": "ln -sf $PWD/../assets $PWD/static",
-    "check": "svelte-check --workspace src --tsconfig ./tsconfig.json"
+    "check": "svelte-check"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.13",
-    "@sveltejs/kit": "^1.0.0-next.134",
+    "@sveltejs/adapter-static": "^1.0.0-next.16",
+    "@sveltejs/kit": "^1.0.0-next.151",
     "@svicons/fa-regular": "^0.1.3",
     "@svicons/octicons": "^0.1.3",
-    "@typescript-eslint/eslint-plugin": "^4.28.4",
-    "@typescript-eslint/parser": "^4.28.4",
-    "eslint": "^7.31.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "^7.32.0",
     "eslint-plugin-svelte3": "^3.2.0",
     "image-size": "^1.0.0",
     "prettier": "^2.3.2",
     "prettier-plugin-svelte": "^2.3.1",
-    "svelte": "^3.40.0",
+    "svelte": "^3.42.1",
     "svelte-bricks": "^0.1.0",
-    "svelte-check": "^2.2.3",
+    "svelte-check": "^2.2.4",
     "svelte-preprocess": "^4.7.4",
-    "svelte2tsx": "^0.4.2",
+    "svelte2tsx": "^0.4.5",
     "typescript": "^4.3.5",
-    "vite": "^2.4.3"
+    "vite": "^2.4.4"
   }
 }
