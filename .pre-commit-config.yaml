@@ -12,3 +12,16 @@ repos:
         exclude: ^assets/.+\.svg$
       - id: check-yaml
       - id: trailing-whitespace
+      - id: mixed-line-ending
+      - id: check-symlinks
+      - id: destroyed-symlinks
+
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v2.3.2
+    hooks:
+      - id: prettier
+        args: [--write] # edit files in-place
+        additional_dependencies:
+          - prettier
+          - prettier-plugin-svelte
+          - svelte

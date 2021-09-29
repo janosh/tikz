@@ -62,8 +62,10 @@ const parsedFiles = slugs.map((slug) => {
 })
 
 fs.writeFileSync(
-  `src/slugs.ts`, `export default ` + JSON.stringify(slugs, null, 2)
+  `src/slugs.ts`,
+  `export default ` + JSON.stringify(slugs, null, 2)
 )
 fs.writeFileSync(
-  `src/texFiles.ts`, `export default ` + JSON.stringify(parsedFiles, null, 2)
+  `src/texFiles.ts`,
+  `export default ` + JSON.stringify(parsedFiles, null, 2)
 )

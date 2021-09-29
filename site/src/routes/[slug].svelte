@@ -74,7 +74,6 @@
     padding: 1em;
     line-height: 3ex;
     text-align: justify;
-    word-break: break-all;
   }
   small {
     text-align: center;

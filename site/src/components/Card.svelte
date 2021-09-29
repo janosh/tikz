@@ -25,7 +25,7 @@
     transition: transform 0.5s;
   }
   a:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
   }
   h2 {
     margin: 1ex;
