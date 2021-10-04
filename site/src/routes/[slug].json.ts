@@ -1,6 +1,6 @@
 import texFiles from '../texFiles'
 
-import type { EndpointOutput } from '@sveltejs/kit'
+import { EndpointOutput } from '@sveltejs/kit'
 
 type GetInput = { params: { slug: string } }
 

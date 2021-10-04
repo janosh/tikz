@@ -17,11 +17,6 @@
 
 Random collection of **105** [`standalone`](https://ctan.org/pkg/standalone) [TikZ](https://ctan.org/pkg/pgf) images accumulated over the years. Mostly about physics and machine learning.
 
-## Table of Contents
-
-- [Images](#images)
-- [Scripts](#scripts)
-
 ## Images
 
 |                        [`detailed-balance.tex`](assets/detailed-balance)                        |                                      [`bloch-sphere.tex`](assets/bloch-sphere)                                       |

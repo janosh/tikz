@@ -19,7 +19,7 @@
 <script lang="ts">
   import Prism from '../components/Prism.svelte'
   import type { LoadInput, LoadOutput } from '@sveltejs/kit'
-  import type { TexFile } from '../types'
+  import { TexFile } from '../types'
 
   export let texFile: TexFile
 

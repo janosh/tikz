@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { TexFile } from '../types'
+  import { TexFile } from '../types'
 
   export let item: TexFile
 
