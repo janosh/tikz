@@ -1,10 +1,8 @@
-<p align="center">
+<h1 align="center">
   <a href="https://tikz.netlify.app">
     <img src="site/static/favicon.svg" alt="TikZ" height=150>
   </a>
-</p>
-
-<h1 align="center">TikZ Standalone</h1>
+</h1>
 
 <h3 align="center">
 
