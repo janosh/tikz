@@ -17,9 +17,8 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v3
         with:
-          ref: ${{ github.head_ref }}
-          # get several commits to include BASE_REF commit where PR branched off
-          fetch-depth: 20
+          # get full history to include BASE_REF commit where PR branched off
+          fetch-depth: 0
 
       - name: Get changed TeX files
         id: diff
@@ -58,4 +57,4 @@ jobs:
           git config user.email janosh.riebesell@gmail.com
           git add assets
           git commit -m 'update assets for ${{ steps.diff.outputs.tex-files }}'
-          git push
+          git push ${{ github.head_ref }}
