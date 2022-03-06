@@ -4,9 +4,6 @@ on:
   pull_request:
     branches: [main]
     paths: [assets/**/*.tex]
-  push:
-    branches: [main]
-    paths: [assets/**/*.tex]
 
 jobs:
   update-assets:
@@ -43,7 +40,8 @@ jobs:
           pdf-compressor --set-api-key ${{ secrets.ILOVEPDF_PUBLIC_KEY }}
 
       - name: Install TeX Live
-        run: sudo apt-get install texlive latexmk
+        # texlive-latex-extra is needed for package standalone
+        run: sudo apt-get install texlive latexmk texlive-latex-base texlive-latex-extra texlive-science
 
       - name: Run scripts/render-tikz.sh
         id: render-tikz
@@ -58,6 +56,6 @@ jobs:
           git config user.name 'Janosh Riebesell'
           git config user.email janosh.riebesell@gmail.com
           git checkout ${{ github.head_ref }}
-          git add assets
+          git add assets/**/*.{pdf,svg,png}
           git commit -m 'update assets for ${{ steps.diff.outputs.tex-files }}'
           git push
