@@ -57,6 +57,7 @@ jobs:
         run: |
           git config user.name 'Janosh Riebesell'
           git config user.email janosh.riebesell@gmail.com
+          git checkout ${{ github.head_ref }}
           git add assets
           git commit -m 'update assets for ${{ steps.diff.outputs.tex-files }}'
-          git push origin/${{ github.head_ref }}
+          git push

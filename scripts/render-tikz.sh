@@ -10,10 +10,17 @@ dir=${1%/*}
 basepath=${1%.tex}
 
 # Create PDF from TeX file.
-latexmk -silent -pdf -jobname="$basepath" "$1"
+ret_val=$(latexmk -silent -pdf -jobname="$basepath" "$1")
+
+if [ "$CI" = true ] && [ "$ret_val" -eq 0 ]; then
+    echo "PDF created successfully."
+else
+    cat "$basepath.log"
+fi
+
 
 # Delete LaTeX auxiliary files.
-find -E "$dir" -type f -regex ".*\.(aux|log|fls|fdb_latexmk)$" -delete
+find "$dir" -type f -regex ".*\.(aux|log|fls|fdb_latexmk)$" -delete
 
 # Compress PDF. iLovePDF performs much better than Ghostscript but the API only offers
 # 250 free compressions per month.
