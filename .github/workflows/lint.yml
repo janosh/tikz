@@ -1,6 +1,12 @@
 name: Link Check
 
-on: [push, pull_request]
+on:
+  pull_request:
+    branches: [main]
+    paths: ["**/*.md"]
+  push:
+    branches: [main]
+    paths: ["**/*.md"]
 
 jobs:
   markdown-link-check:

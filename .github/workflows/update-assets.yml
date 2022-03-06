@@ -26,8 +26,10 @@ jobs:
         run: |
           if [ $GITHUB_BASE_REF ]; then # Pull Request
             BASE_REF="origin/$GITHUB_BASE_REF"
+            git fetch origin $GITHUB_BASE_REF --depth=1
           else # Push
             BASE_REF=${{ github.event.before }}
+            git fetch origin $BASE_REF --depth=1
           fi
           echo "TeX files changed between BASE_REF=$BASE_REF and SHA=$GITHUB_SHA:"
           DIFF=$( git diff --name-only $BASE_REF $GITHUB_SHA | grep .tex$ | xargs )
