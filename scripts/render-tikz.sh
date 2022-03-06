@@ -17,7 +17,7 @@ find -E "$dir" -type f -regex ".*\.(aux|log|fls|fdb_latexmk)$" -delete
 
 # Compress PDF. iLovePDF performs much better than Ghostscript but the API only offers
 # 250 free compressions per month.
-# scripts/gs_pdf_compress.sh "$dir"
+# scripts/gs-pdf-compress.sh "$dir"
 pdf-compressor --inplace "$basepath.pdf"
 
 # Convert PDF to SVG and compress.
