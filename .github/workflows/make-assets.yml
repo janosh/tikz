@@ -23,13 +23,8 @@ jobs:
       - name: Get changed TeX files
         id: diff
         run: |
-          if [ $GITHUB_BASE_REF ]; then # Pull Request
-            BASE_REF="origin/$GITHUB_BASE_REF"
-            git fetch origin $GITHUB_BASE_REF --depth=1
-          else # Push
-            BASE_REF=${{ github.event.before }}
-            git fetch origin $BASE_REF --depth=1
-          fi
+          BASE_REF=${{ github.event.before }}
+          git fetch origin $BASE_REF --depth=1
           echo "TeX files changed between BASE_REF=$BASE_REF and SHA=$GITHUB_SHA:"
           tex_files=$(git diff --name-only $BASE_REF $GITHUB_SHA | grep .tex$ | xargs)
           echo "$tex_files"
@@ -47,6 +42,7 @@ jobs:
         run: sudo apt-get install texlive latexmk texlive-latex-base texlive-latex-extra
 
       - name: Run render-tikz.sh on changed TeX files
+        if: steps.diff.outputs.tex-files != ''
         id: render-tikz
         run: |
           for tex_file in ${{ steps.diff.outputs.tex-files }}; do
