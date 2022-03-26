@@ -61,5 +61,5 @@ jobs:
           git config user.email janosh.riebesell@gmail.com
           git checkout ${{ github.head_ref }}
           git add assets/**/*.{pdf,svg,png}
-          git commit -m 'update assets for ${{ steps.diff.outputs.tex-files }}'
+          git commit -m 'assets for ${{ steps.diff.outputs.tex-files }}'
           git push
