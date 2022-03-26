@@ -31,6 +31,7 @@ jobs:
           echo "::set-output name=tex-files::$tex_files"
 
       - name: Install compression deps
+        if: steps.diff.outputs.tex-files != ''
         run: |
           sudo apt-get install -y pdf2svg imagemagick pngquant zopfli
           sudo snap install svgo
@@ -38,6 +39,7 @@ jobs:
           pdf-compressor --set-api-key ${{ secrets.ILOVEPDF_PUBLIC_KEY }}
 
       - name: Install TeX Live
+        if: steps.diff.outputs.tex-files != ''
         # texlive-latex-extra is needed for package standalone
         run: sudo apt-get install texlive latexmk texlive-latex-base texlive-latex-extra
 
