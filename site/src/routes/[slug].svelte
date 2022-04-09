@@ -6,7 +6,7 @@
   import { TexFile } from '../types'
   export let texFile: TexFile
 
-  $: ({ title, desc, code, width, height, slug, downloads } = texFile)
+  $: ({ title, description, code, width, height, slug, downloads, tags } = texFile)
   $: link = `GitHub||https://github.com/janosh/tikz/blob/main/assets/${slug}/${slug}.tex`
   const labels = [
     [`.png`, `PNG`],
@@ -23,8 +23,15 @@
 <a href="/" sveltekit:prefetch>&laquo; back</a>
 <h1>{title}</h1>
 
-{#if desc}
-  <p>{@html desc}</p>
+<h3>Tags</h3>
+<p class="tags">
+  {#each tags as tag}
+    <span>{tag}</span>
+  {/each}
+</p>
+
+{#if description}
+  <p>{@html description}</p>
 {/if}
 
 <img src="/assets/{slug}/{slug}-hd.png" alt={title} {width} {height} />
@@ -94,5 +101,16 @@
     position: absolute;
     top: 2em;
     left: 2em;
+  }
+  p.tags {
+    display: flex;
+    place-content: center;
+    gap: 1ex;
+    padding: 0;
+  }
+  p.tags span {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 4pt;
+    border-radius: 3pt;
   }
 </style>

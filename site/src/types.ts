@@ -5,6 +5,7 @@ export type TexFile = {
   width: number
   height: number
   downloads: string[]
-  desc: string
+  tags: string[]
+  description: string
   code: string
 }
