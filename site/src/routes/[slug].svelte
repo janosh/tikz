@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { dev } from '$app/env'
   import CodeIcon from '@svicons/octicons/code.svelte'
   import DownloadIcon from '@svicons/octicons/download.svelte'
   import LinkExternal from '@svicons/octicons/link-external.svelte'
@@ -17,7 +18,10 @@
     [`.tex`, `TeX`],
   ] as const
 
-  $: snip_uri = `https://raw.githubusercontent.com/janosh/tikz/main/assets/${slug}/${slug}.tex`
+  const gh_base_uri = `https://raw.githubusercontent.com/janosh/tikz/main/assets`
+  $: base_uri = `${dev ? `/assets` : gh_base_uri}/${slug}/${slug}`
+  $: hd_png = `${base_uri}-hd.png`
+  $: snip_uri = `${base_uri}.tex`
   $: overleaf_href = `https://overleaf.com/docs?snip_uri=${snip_uri}`
 </script>
 
@@ -31,7 +35,7 @@
   <p>{@html description}</p>
 {/if}
 
-<img src="/assets/{slug}/{slug}-hd.png" alt={title} {width} {height} />
+<img src={hd_png} alt={title} {width} {height} />
 
 <h2><LinkExternal height="1em" style="vertical-align: middle;" />&nbsp; Edit</h2>
 <a href={overleaf_href} target="_blank">
@@ -42,7 +46,7 @@
 
 {#each labels as [ext, label]}
   {#if downloads?.some((filename) => filename.includes(ext))}
-    <a href="/assets/{slug}/{slug}{ext}" target="_blank">
+    <a href="{base_uri}{ext}" target="_blank">
       {label}
     </a>
   {/if}

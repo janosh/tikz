@@ -1,10 +1,14 @@
 <script lang="ts">
+  import { dev } from '$app/env'
   import { TexFile } from '../types'
   import { fade } from 'svelte/transition'
   import Tags from './Tags.svelte'
 
   export let item: TexFile
   export let style = ''
+
+  const gh_base_uri = `https://raw.githubusercontent.com/janosh/tikz/main/assets`
+  $: base_uri = `${dev ? `/assets` : gh_base_uri}/${slug}/${slug}`
 
   $: ({ slug, title, description, width, height, tags } = item)
 </script>
@@ -13,7 +17,7 @@
   <h2 id={slug}>{title}</h2>
 
   <Tags {tags} />
-  <img src="assets/{slug}/{slug}.png" alt={title} {width} {height} />
+  <img src="{base_uri}.png" alt={title} {width} {height} />
   {#if description}
     <p class="description">{@html description}</p>
   {/if}
