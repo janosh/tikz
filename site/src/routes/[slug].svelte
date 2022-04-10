@@ -3,6 +3,7 @@
   import DownloadIcon from '@svicons/octicons/download.svelte'
   import LinkExternal from '@svicons/octicons/link-external.svelte'
   import Prism from '../components/Prism.svelte'
+  import Tags from '../components/Tags.svelte'
   import { TexFile } from '../types'
   export let texFile: TexFile
 
@@ -24,11 +25,7 @@
 <h1>{title}</h1>
 
 <h3>Tags</h3>
-<p class="tags">
-  {#each tags as tag}
-    <span>{tag}</span>
-  {/each}
-</p>
+<Tags {tags} fontSize="12pt" />
 
 {#if description}
   <p>{@html description}</p>
@@ -101,16 +98,5 @@
     position: absolute;
     top: 2em;
     left: 2em;
-  }
-  p.tags {
-    display: flex;
-    place-content: center;
-    gap: 1ex;
-    padding: 0;
-  }
-  p.tags span {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 0 4pt;
-    border-radius: 3pt;
   }
 </style>

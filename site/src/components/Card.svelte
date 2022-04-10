@@ -1,18 +1,21 @@
 <script lang="ts">
   import { TexFile } from '../types'
   import { fade } from 'svelte/transition'
+  import Tags from './Tags.svelte'
 
   export let item: TexFile
   export let style = ''
 
-  $: ({ slug, title, desc, width, height } = item)
+  $: ({ slug, title, description, width, height, tags } = item)
 </script>
 
 <a href={slug} sveltekit:prefetch transition:fade={{ duration: 200 }} {style}>
   <h2 id={slug}>{title}</h2>
+
+  <Tags {tags} />
   <img src="assets/{slug}/{slug}.png" alt={title} {width} {height} />
-  {#if desc}
-    <p>{@html desc}</p>
+  {#if description}
+    <p class="description">{@html description}</p>
   {/if}
 </a>
 
@@ -25,6 +28,7 @@
     transform-style: preserve-3d;
     background: #595975;
     transition: transform 0.5s;
+    color: white;
   }
   a:hover {
     transform: scale(1.01);
@@ -42,13 +46,12 @@
     border-radius: 4pt;
     height: auto;
   }
-  p {
+  p.description {
     padding: 1ex 1em;
     position: absolute;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     margin: 0;
-    color: white;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.5s;
@@ -59,7 +62,7 @@
     overflow: scroll;
     font-size: 1.5ex;
   }
-  a:hover p {
+  a:hover p.description {
     visibility: visible;
     opacity: 1;
   }
