@@ -11,4 +11,4 @@ description: |
   space, this leads to the replacement of continuous frequencies by discrete
   imaginary (Matsubara) frequencies. Away from the imaginary axis, the
   distribution becomes approximately flat, particularly at sufficiently low
-  temperatures. Pulled from https://arxiv.org/abs/1712.09863.
+  temperatures. Pulled from [arxiv:1712.09863](https://arxiv.org/abs/1712.09863).

@@ -7,4 +7,4 @@ tags:
 description: |
   Representation Learning from Stoichiometry (Roost). Graph representation and
   update mechanism for the composition La2CuO4. Essentially depicting a graph
-  convolution. https://arxiv.org/abs/1910.00617
+  convolution. [arxiv:1910.00617](https://arxiv.org/abs/1910.00617)

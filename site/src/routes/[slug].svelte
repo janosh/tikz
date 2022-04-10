@@ -29,7 +29,7 @@
 <h1>{title}</h1>
 
 <h3>Tags</h3>
-<Tags {tags} fontSize="12pt" />
+<Tags {tags} fontSize="12pt" margin="0 0 2em" />
 
 {#if description}
   <p>{@html description}</p>

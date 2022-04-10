@@ -1,9 +1,10 @@
 <script lang="ts">
   export let tags: string[]
   export let fontSize = `9pt`
+  export let margin = `0 1ex`
 </script>
 
-<p class="tags">
+<p class="tags" style:margin>
   {#each tags as tag}
     <small style:font-size={fontSize}>{tag}</small>
   {/each}
@@ -16,7 +17,6 @@
     place-content: center;
     gap: 4pt;
     padding: 0;
-    margin: 0 1ex;
   }
   p.tags small {
     background-color: rgba(255, 255, 255, 0.2);

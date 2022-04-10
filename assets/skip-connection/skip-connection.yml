@@ -4,4 +4,4 @@ tags:
   - neural networks
 description: |
   Illustration of skip connection in a residual block. Inspired by the ResNet
-  paper. https://arxiv.org/abs/1512.03385
+  paper. [arxiv:1512.03385](https://arxiv.org/abs/1512.03385)

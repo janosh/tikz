@@ -60,7 +60,7 @@
     opacity: 0;
     transition: opacity 0.5s;
     overflow-wrap: break-word;
-    max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
     max-height: 70%;
     overflow: scroll;

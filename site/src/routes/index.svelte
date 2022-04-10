@@ -4,7 +4,7 @@
   import MarkGithub from '@svicons/octicons/mark-github.svelte'
   import Card from '../components/Card.svelte'
   import RadioButtons from '../components/RadioButtons.svelte'
-  import tikz_figs from '../texFiles'
+  import tikz_figs from '../tikz-figures'
   import { filter_tags, tag_filter_mode, search } from '../stores'
   import MultiSelect from 'svelte-multiselect'
 
