@@ -12,7 +12,9 @@
     <h1>{$page.error?.name} {$page.status}: Page not found 😅</h1>
     <p>
       Either it doesn't exist or something is wrong with the server. This site is hosted
-      on Netlify. You can check <a href="https://netlifystatus.com"> their status page</a>
+      by GitHub Pages. You can check the <a href="https://www.githubstatus.com">
+        GitHub status page
+      </a>
       or return to the
       <a href="/">index page</a>.
     </p>

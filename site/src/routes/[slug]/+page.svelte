@@ -21,7 +21,7 @@
   ] as const
 
   // development server fetches files from local folder (specified by svelte.config.js kit.files.assets)
-  // production server fetches files from GitHub (so we don't need to upload assets to netlify)
+  // production server fetches files from GitHub (so we don't need to re-upload with every build)
   const asset_uri = dev ? `` : `https://raw.githubusercontent.com/janosh/tikz/main/assets`
   $: base_uri = `${asset_uri}/${slug}/${slug}`
   $: hd_png = `${base_uri}-hd.png`
