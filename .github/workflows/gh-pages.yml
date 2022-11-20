@@ -31,16 +31,18 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
+          cache-dependency-path: site/pnpm-lock.yaml
 
       - name: Install dependencies
         run: |
+          cd site
           pnpm install
           pnpm build
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: build
+          path: site/build
 
   deploy:
     name: Deploy
