@@ -16,7 +16,7 @@
         GitHub status page
       </a>
       or return to the
-      <a href="/">index page</a>.
+      <a href=".">index page</a>.
     </p>
   {:else}
     <h1>⚠️ {$page.error?.name} {$page.status}</h1>

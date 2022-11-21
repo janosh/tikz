@@ -4,14 +4,14 @@
   import PrevNextFig from '$lib/PrevNextFig.svelte'
   import Tags from '$lib/Tags.svelte'
   import Icon from '@iconify/svelte'
-  import { homepage, repo_url } from '../+layout'
+  import { homepage, repository } from '../../../package.json'
   import type { PageData } from './$types'
 
   export let data: PageData
 
   $: ({ title, description, code, width, height } = data.tikz_figure)
   $: ({ creator, creator_url, url, downloads, tags, slug } = data.tikz_figure)
-  $: link = `GitHub||${repo_url}/blob/main/assets/${slug}/${slug}.tex`
+  $: link = `GitHub||${repository}/blob/main/assets/${slug}/${slug}.tex`
   const labels = [
     [`.png`, `PNG`],
     [`-hd.png`, `PNG (HD)`],
@@ -46,7 +46,7 @@
   <meta name="twitter:card" content="summary" />
 </svelte:head>
 
-<a href="/" class="large-link">&laquo; back</a>
+<a href="." class="large-link">&laquo; back</a>
 <h1>{title}</h1>
 
 {#if creator || url}
@@ -146,7 +146,7 @@
     display: inline-flex;
     place-items: center;
   }
-  a.large-link[href='/'] {
+  a.large-link[href='.'] {
     position: absolute;
     top: 2em;
     left: 2em;
