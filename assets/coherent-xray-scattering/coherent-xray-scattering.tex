@@ -1,0 +1,61 @@
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{fadings}
+\usetikzlibrary{shadings}
+
+% Custom arc fading definition
+\tikzfading[name=fade out,
+    inner color=transparent!0,
+    outer color=transparent!100]
+
+% Define the radial shading with a light at the center
+\pgfdeclareradialshading{atomshade}{
+    \pgfpoint{0cm}{0cm}}
+        {
+        color(0cm)=(pgftransparent!0);
+        color(0.2cm)=(pgftransparent!20);
+        color(0.5cm)=(pgftransparent!50);
+        color(0.7cm)=(pgftransparent!70);
+        color(1cm)=(pgftransparent!100)
+    }
+    
+% Atom definition
+\tikzset{atom/.style={circle, shading=atomshade, minimum size=1.0cm}}
+
+\begin{document}
+\begin{tikzpicture}
+
+% Atom
+\node[atom=gray] (atom1) at (0,0) {};
+
+% Oscillations using arcs with a loop
+\foreach \radius in {0.85, 0.95, 1.05, 1.15} {
+    \draw[path fading=fade out, thick] (\radius cm - 0.20cm, 0.05cm) arc (15:75:\radius cm);
+    \draw[path fading=fade out, thick] (-\radius cm + 0.20cm, -0.05cm) arc (195:255:\radius cm);
+}
+
+% Incoming x-ray wave packet
+\draw[->,black,variable=\x,samples=200,smooth,domain=-1.7:-1.1]
+    plot(\x,{0.1*exp(-(1.45+\x)^2/0.025)*cos(5.0e3*\x)});
+\node [above] at (-1.6,0.04) {$\lambda_{\text{in}}$};
+
+% Emitted x-ray packets
+\foreach \angle in {95, 135, 165, 275, 315, 350} {
+    % Calculate starting points
+    \pgfmathsetmacro{\startX}{0.55 * cos(\angle)}
+    \pgfmathsetmacro{\startY}{0.55 * sin(\angle)}
+
+    % Draw wave packet with proper rotation
+    \draw[->, black, variable=\x, samples=200, smooth, domain=0:0.65]
+        plot({
+            \startX + \x * cos(\angle) - 0.1 * exp(-(\x-0.325)^2/0.025) * sin(5.0e3*\x) * sin(\angle)
+        }, {
+            \startY + \x * sin(\angle) + 0.1 * exp(-(\x-0.325)^2/0.025) * sin(5.0e3*\x) * cos(\angle)
+        });
+}
+\node [above] at (-0.5,1.1) {$\lambda_{\text{coh}}$};
+
+\end{tikzpicture}
+\end{document}
