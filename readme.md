@@ -130,8 +130,8 @@ Have a TikZ image you'd like to share? [Submit a PR](https://github.com/janosh/t
 |                                 ![graph-isomorphism](assets/graph-isomorphism/graph-isomorphism.png)                                 |                                     ![periodic-table](assets/periodic-table/periodic-table.png)                                      |
 |                                           [`mosfet`](https://janosh.github.io/tikz/mosfet)                                           |                                [`plate-capacitor.tex`](https://janosh.github.io/tikz/plate-capacitor)                                |
 |                                                 ![mosfet](assets/mosfet/mosfet.png)                                                  |                                    ![plate-capacitor](assets/plate-capacitor/plate-capacitor.png)                                    |
-|                                [`basis + lattice`](https://janosh.github.io/tikz/basis-plus-lattice)                                 |                              [`thompson-scattering`](https://janosh.github.io/tikz/thompson-scattering)                              |
-|                               ![basis-plus-lattice](assets/basis-plus-lattice/basis-plus-lattice.png)                                |                              ![thompson-scattering](assets/thompson-scattering/thompson-scattering.png)                              |
+|                                [`basis + lattice`](https://janosh.github.io/tikz/basis-plus-lattice)                                 |                               [`thomson-scattering`](https://janosh.github.io/tikz/thomson-scattering)                               |
+|                               ![basis-plus-lattice](assets/basis-plus-lattice/basis-plus-lattice.png)                                |                               ![thomson-scattering](assets/thomson-scattering/thomson-scattering.png)                                |
 
 ## Scripts
 
