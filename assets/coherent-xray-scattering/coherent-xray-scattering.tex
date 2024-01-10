@@ -39,7 +39,7 @@
 % Incoming x-ray wave packet
 \draw[->,black,variable=\x,samples=200,smooth,domain=-1.7:-1.1]
     plot(\x,{0.1*exp(-(1.45+\x)^2/0.025)*cos(5.0e3*\x)});
-\node [above] at (-1.6,0.04) {$\lambda_{\text{in}}$};
+\node [above] at (-1.6,0.04) {$\lambda$};
 
 % Emitted x-ray packets
 \foreach \angle in {95, 135, 165, 275, 315, 350} {
@@ -55,7 +55,7 @@
             \startY + \x * sin(\angle) + 0.1 * exp(-(\x-0.325)^2/0.025) * sin(5.0e3*\x) * cos(\angle)
         });
 }
-\node [above] at (-0.5,1.1) {$\lambda_{\text{coh}}$};
+\node [above] at (-0.25,1.1) {$\lambda$};
 
 \end{tikzpicture}
 \end{document}
