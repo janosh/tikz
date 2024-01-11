@@ -50,7 +50,7 @@
   h3 small {
     color: #fff;
     font-weight: 200;
-    padding-left: 1em;
+    padding-left: 6pt;
   }
   aside {
     position: absolute;
