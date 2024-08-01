@@ -1,4 +1,4 @@
-\documentclass[border=10pt]{standalone}
+\documentclass[border=2pt]{standalone}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta, positioning, calc, intersections, shapes.misc}
 
@@ -58,7 +58,7 @@
 
 % Hypothetical hull
 \draw[gray, dashed, line width=1.5pt] (AX) -- (A2X7) -- (X);
-\node[gray, above=3.5cm of $(A2X5)!0.1!(X)$, align=center] {hypothetical hull for\\evaluating $A_2X_5$};
+\node[gray, above=3cm of $(A2X5)!0.1!(X)$, align=center] {hypothetical hull for\\evaluating $A_2X_5$};
 
 % Delta E_d arrow for hypothetical hull
 \coordinate (hull_midpoint) at ($(AX)!0.78!(A2X7)$);
