@@ -28,7 +28,7 @@
 % Define BaTiO3 (#221) unit cell projection
 \newcommand{\DrawUnitCell}[1]{
     \begin{tikzpicture}[scale=1.5]
-    
+
     % Draw the unit cell
     \draw[thick] (0,0,0) -- (1,0,0) -- (1,1,0) -- (0,1,0) -- cycle; % Bottom face
     \draw[thick] (0,0,1) -- (1,0,1) -- (1,1,1) -- (0,1,1) -- cycle; % Top face
@@ -68,14 +68,14 @@
             \draw[bond=red] (0.5,0.5,0) -- (0.5,0.5,1);
         \fi\fi
     \end{scope}
-       
-    
+
+
     % Draw the Oxygen atoms (Red) (back perspective)
-    \node[atom, anchor=center,ball color=red] at (0,0.5,0.5) {}; 
-    \node[atom, anchor=center,ball color=red] at (0.5,0,0.5) {};  
-    \node[atom, anchor=center,ball color=red] at (0.5,0.5,0.0) {}; 
- 
-    
+    \node[atom, anchor=center,ball color=red] at (0,0.5,0.5) {};
+    \node[atom, anchor=center,ball color=red] at (0.5,0,0.5) {};
+    \node[atom, anchor=center,ball color=red] at (0.5,0.5,0.0) {};
+
+
     % Draw the Barium atoms (Cyan)
     \node[atom, anchor=center,ball color=cyan] at (0,0,0) {};
     \node[atom, anchor=center,ball color=cyan] at (1,0,0) {};
@@ -85,22 +85,22 @@
     \node[atom, anchor=center,ball color=cyan] at (1,0,1) {};
     \node[atom, anchor=center,ball color=cyan] at (0,1,1) {};
     \node[atom, anchor=center,ball color=cyan] at (1,1,1) {};
- 
+
     % Titanium atom (Gray)
     \node[atom, anchor=center,ball color=gray, minimum size=0.25cm] at (0.5,#1,0.5) {};
-     
+
     % Draw the Oxygen atoms (red) (front perspective)
-    \node[atom, anchor=center,ball color=red] at (0.5,1,0.5) {}; 
-    \node[atom, anchor=center,ball color=red] at (1,0.5,0.5) {}; 
-    \node[atom, anchor=center,ball color=red] at (0.5,0.5,1) {}; 
-    
-    % If you want arrow indicating Ti polarization 
+    \node[atom, anchor=center,ball color=red] at (0.5,1,0.5) {};
+    \node[atom, anchor=center,ball color=red] at (1,0.5,0.5) {};
+    \node[atom, anchor=center,ball color=red] at (0.5,0.5,1) {};
+
+    % If you want arrow indicating Ti polarization
     %\ifnum \pdfstrcmp{#1}{0.5} > 0
-    %    \draw[->, thick] (0.5,{#1},0.5) -- ++(0,0.3,0); 
+    %    \draw[->, thick] (0.5,{#1},0.5) -- ++(0,0.3,0);
     %\else\ifnum \pdfstrcmp{#1}{0.5} < 0
-    %    \draw[->, thick] (0.5,{#1},0.5) -- ++(0,-0.3,0); 
+    %    \draw[->, thick] (0.5,{#1},0.5) -- ++(0,-0.3,0);
     %\fi\fi
-   
+
     \end{tikzpicture}
 }
 
@@ -121,7 +121,7 @@
             enlargelimits=false,
             xmin=-2.5, xmax=2.5,
             axis line style={very thick},
-        ]   
+        ]
 
             % Double-well free energy potential
             \nextgroupplot[
