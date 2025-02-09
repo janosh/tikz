@@ -18,59 +18,59 @@
   )
 
   set-style(line: (stroke: black + 0.8pt))
-  
+
   // Draw first graph (square)
   scope({
     vertex((0, 0), 1, colors.at(0), "g1n1")
     vertex((0, 2), 2, colors.at(1), "g1n2")
     vertex((2, 2), 3, colors.at(2), "g1n3")
     vertex((2, 0), 4, colors.at(3), "g1n4")
-  
+
     line("g1n1", "g1n2")
     line("g1n2", "g1n3")
     line("g1n3", "g1n4")
     line("g1n4", "g1n1")
   })
-    
+
   // Draw second graph (trapezoid)
   scope({
     translate((4, 0))
-    
+
     vertex((0, 0), 1, colors.at(0), "g2n1")
     vertex((2, 2), 2, colors.at(1), "g2n2")
     vertex((0, 2), 3, colors.at(2), "g2n3")
     vertex((2, 0), 4, colors.at(3), "g2n4")
-  
+
     line("g2n1", "g2n2")
     line("g2n2", "g2n3")
     line("g2n3", "g2n4")
     line("g2n4", "g2n1")
   })
-  
+
   // Draw third graph (kite)
   scope({
     translate((8, 0))
-    
+
     vertex((0, 0), 1, colors.at(0), "g3n1")
     vertex((2, 2), 2, colors.at(1), "g3n2")
     vertex((2, 0), 3, colors.at(3), "g3n3")
     vertex((0, 2), 4, colors.at(2), "g3n4")
-  
+
     line("g3n1", "g3n2")
     line("g3n2", "g3n3")
     line("g3n3", "g3n4")
     line("g3n4", "g3n1")
   })
-    
+
   // Draw fourth graph (irregular)
   scope({
     translate((12.5, 0))
-    
+
     vertex((-0.5, 0), 1, colors.at(0), "g4n1")
     vertex((0.25, 2.2), 2, colors.at(1), "g4n2")
     vertex((2, 1.6), 3, colors.at(2), "g4n3")
     vertex((-0.7, 1.4), 4, colors.at(3), "g4n4")
-  
+
     line("g4n1", "g4n2")
     line("g4n2", "g4n3")
     line("g4n3", "g4n4")
