@@ -231,5 +231,5 @@ if __name__ == "__main__":
     remove_duplicate_tags(yaml_files)
     missing = check_missing_descriptions(yaml_files)  # Add description check
     # TODO remove missing allowance once all diagrams have descriptions
-    raise_missing = len(missing) > 25
+    raise_missing = len(missing) > 7
     raise SystemExit(errors or raise_missing)  # Exit with error if any checks fail
