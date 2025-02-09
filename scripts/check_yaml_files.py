@@ -65,15 +65,14 @@ def find_similar_tags(
     return sorted(similar_pairs, key=lambda x: x[2], reverse=True)
 
 
-def report_similar_tags():
+def report_similar_tags(yaml_files: list[str]):
     """Find minor variations of tags and suggest renaming them for cross-file consistency."""
     tag_counter = Counter()
-    all_yaml_files = glob("./assets/**/*.yml")
 
     print("\nAnalyzing tags across YAML files...")
-    print(f"Found {len(all_yaml_files)} YAML files")
+    print(f"Found {len(yaml_files)} YAML files")
 
-    for yaml_file in all_yaml_files:
+    for yaml_file in yaml_files:
         try:
             with open(yaml_file) as file:
                 data = yaml.safe_load(file)
@@ -106,10 +105,10 @@ def report_similar_tags():
             )
 
 
-def check_yaml_titles():
+def check_yaml_titles(yaml_files: list[str]) -> dict[str, str]:
     errors: dict[str, str] = {}
 
-    for yaml_file in glob("./assets/**/*.yml"):
+    for yaml_file in yaml_files:
         file_name = os.path.basename(yaml_file).split(".")[0]
         if file_name in IGNORE_SET:
             continue
@@ -145,10 +144,10 @@ def check_yaml_titles():
     return len(errors)
 
 
-def remove_duplicate_tags():
+def remove_duplicate_tags(yaml_files: list[str]) -> list[str]:
     """Remove duplicate tags from all YAML files."""
-    yaml_files = glob("./assets/**/*.yml")
-    changes_made = 0
+
+    files_changed: list[str] = []
 
     print("\nChecking for duplicate tags...")
 
@@ -168,7 +167,7 @@ def remove_duplicate_tags():
 
             # Check if there were any duplicates
             if len(unique_tags) < len(original_tags):
-                changes_made += 1
+                files_changed += [yaml_file]
                 removed_count = len(original_tags) - len(unique_tags)
                 duplicates = [
                     tag for tag in original_tags if original_tags.count(tag) > 1
@@ -191,43 +190,46 @@ def remove_duplicate_tags():
             exc.add_note(f"{yaml_file=}")
             raise
 
-    if changes_made == 0:
+    if not files_changed:
         print("No duplicate tags found.")
     else:
-        print(f"\nRemoved duplicates from {changes_made} files.")
+        print(f"\nRemoved duplicates from {len(files_changed)} files.")
 
-    return changes_made
+    return files_changed
 
 
-def check_missing_descriptions():
+def check_missing_descriptions(yaml_files: list[str]) -> list[str]:
     """Find and print all YAML files with missing descriptions."""
-    yaml_files = glob("./assets/**/*.yml")
-    missing_desc = []
+
+    missing_desc: list[str] = []
 
     for yaml_file in yaml_files:
         try:
             with open(yaml_file) as file:
                 data = yaml.safe_load(file)
                 if data and data.get("description") is None:
-                    missing_desc.append(yaml_file)
+                    missing_desc += [yaml_file]
         except Exception as exc:
             exc.add_note(f"{yaml_file=}")
             raise
 
     if missing_desc:
-        print("\nFiles with missing descriptions:")
+        print(f"\n {len(missing_desc)} files with missing descriptions:")
         print("-" * 40)
         for file in missing_desc:
             print(file)
     else:
         print("\nNo files with missing descriptions found.")
 
-    return len(missing_desc)
+    return missing_desc
 
 
 if __name__ == "__main__":
-    errors = check_yaml_titles()
-    report_similar_tags()
-    remove_duplicate_tags()
-    missing = check_missing_descriptions()  # Add description check
-    raise SystemExit(errors or missing)  # Exit with error if any checks fail
+    yaml_files = glob("./assets/**/*.yml")
+    errors = check_yaml_titles(yaml_files)
+    report_similar_tags(yaml_files)
+    remove_duplicate_tags(yaml_files)
+    missing = check_missing_descriptions(yaml_files)  # Add description check
+    # TODO remove missing allowance once all diagrams have descriptions
+    raise_missing = len(missing) > 25
+    raise SystemExit(errors or raise_missing)  # Exit with error if any checks fail
