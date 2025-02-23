@@ -3,18 +3,11 @@
   "description": "Gallery of scientific diagrams along with their Typst and/or LaTeX source code",
   "homepage": "https://janosh.github.io/diagrams",
   "license": "MIT",
-  "name": "tikz",
+  "name": "scientific-diagrams",
   "repository": "https://github.com/janosh/diagrams",
   "type": "module",
   "version": "1.0.0",
   "bugs": "https://github.com/janosh/diagrams/issues",
-  "scripts": {
-    "build": "vite build",
-    "dev": "vite dev",
-    "preview": "vite preview",
-    "serve": "vite build && vite preview",
-    "check": "svelte-check"
-  },
   "devDependencies": {
     "@iconify/svelte": "^4.2.0",
     "@rollup/plugin-yaml": "^4.1.2",

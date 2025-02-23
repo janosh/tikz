@@ -2,18 +2,24 @@
   import { building } from '$app/environment'
   import { goto } from '$app/navigation'
   import { Card, diagrams } from '$lib'
-  import { filter_tags, filtered_diagrams, search, tag_filter_mode } from '$lib/stores'
+  import {
+    filter_tags,
+    filtered_diagrams,
+    search,
+    tag_filter_mode,
+  } from '$lib/stores'
   import { homepage, repository } from '$root/package.json'
   import Icon from '@iconify/svelte'
   import MultiSelect, { type ObjectOption } from 'svelte-multiselect'
-  import { RadioButtons, highlight_matches } from 'svelte-zoo'
+  import { highlight_matches, RadioButtons } from 'svelte-zoo'
 
   let innerWidth: number = $state(0)
 
   const clamp = (num: number, min: number, max: number) =>
     Math.min(Math.max(num, min), max)
 
-  const meta_description = `${diagrams.length} Diagrams on Physics, Chemistry, Computer Science, and Machine Learning`
+  const meta_description =
+    `${diagrams.length} Diagrams on Physics, Chemistry, Computer Science, and Machine Learning`
 
   let active_diagram = $state(-1)
 
@@ -56,7 +62,7 @@
       .filter((file) => {
         const searchTerms = $search?.toLowerCase().split(` `)
         const matches_search = searchTerms?.every((term) =>
-          JSON.stringify(file).toLowerCase().includes(term),
+          JSON.stringify(file).toLowerCase().includes(term)
         )
 
         let matches_tags = true
@@ -114,7 +120,7 @@
   <a href="{repository}/blob/main/license">MIT licensed</a> (free to reuse)&ensp;
   <a href={repository}><Icon icon="octicon:mark-github" inline />&nbsp;Repo</a>
 </p>
-<p style="margin: auto; max-width: 40em;">
+<p style="margin: auto; max-width: 40em">
   Have a TikZ image you'd like to share with attribution?
   <a href="{repository}/pulls">Submit a PR</a> with a <code>.tex</code> or
   <code>.typ</code>
@@ -131,9 +137,8 @@
     bind:selected={$filter_tags}
   >
     {#snippet option({ option }: { option: ObjectOption })}
-      <span style="display: flex; gap: 5pt; align-items: center;">
-        {option.label} <span style="flex: 1;"></span>
-        {option.count}
+      <span style="display: flex; gap: 5pt; align-items: center">
+        {option.label} <span style="flex: 1"></span> {option.count}
       </span>
     {/snippet}
   </MultiSelect>
@@ -149,12 +154,12 @@
 {#if cols || building}
   <ul
     style:column-count={cols}
-    style="column-gap: 1em;"
+    style="column-gap: 1em"
     use:highlight_matches={{ query: $search, css_class: `highlight-match` }}
   >
     {#each $filtered_diagrams as item, idx (item.slug)}
       <li class:active={active_diagram == idx}>
-        <Card {item} style="break-inside: avoid;" />
+        <Card {item} style="break-inside: avoid" />
       </li>
     {/each}
   </ul>
