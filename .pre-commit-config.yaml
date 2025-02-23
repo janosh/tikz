@@ -1,6 +1,6 @@
 ci:
   autoupdate_schedule: quarterly
-  skip: [validate-typst, deno-fmt, deno-lint]
+  skip: [validate-typst]
 
 default_install_hook_types: [pre-commit, commit-msg]
 
@@ -20,14 +20,14 @@ repos:
   - repo: local
     hooks:
       - id: deno-fmt
-        name: Format files using Deno
+        name: Deno format
         entry: deno fmt
         types: [file]
         files: \.(js|ts|svelte|json|jsonc)$
         language: system
 
       - id: deno-lint
-        name: Lint files using Deno
+        name: Deno lint
         entry: deno lint
         types: [file]
         files: \.(js|ts|svelte)$
