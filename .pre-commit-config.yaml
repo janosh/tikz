@@ -1,6 +1,6 @@
 ci:
   autoupdate_schedule: quarterly
-  skip: [validate-typst]
+  skip: [validate-typst, deno-fmt, deno-lint]
 
 default_install_hook_types: [pre-commit, commit-msg]
 
